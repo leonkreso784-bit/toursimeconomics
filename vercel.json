@@ -1,16 +1,11 @@
 {
   "version": 2,
   "name": "gastronomy-tourism-economics",
-  "builds": [
+  "outputDirectory": "dist",
+  "rewrites": [
     {
-      "src": "dist/**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/dist/$1"
+      "source": "/(.*)",
+      "destination": "/$1"
     }
   ],
   "headers": [
