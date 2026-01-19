@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomy Tourism Economics: Croatia vs Russia</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slides.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/charts.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p>Loading Presentation...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="main-nav">
+        <div class="nav-logo">
+            <span class="logo-icon">🍽️</span>
+            <span class="logo-text">Gastro Tourism</span>
+        </div>
+        <div class="nav-controls">
+            <button id="prev-btn" class="nav-btn" title="Previous Slide">
+                <span>←</span>
+            </button>
+            <span id="slide-counter" class="slide-counter">1 / 10</span>
+            <button id="next-btn" class="nav-btn" title="Next Slide">
+                <span>→</span>
+            </button>
+        </div>
+        <div class="nav-menu">
+            <button id="menu-toggle" class="menu-toggle" title="Menu">
+                <span class="menu-icon">☰</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Sidebar Menu -->
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>Sadržaj</h3>
+            <button id="sidebar-close" class="sidebar-close">×</button>
+        </div>
+        <ul id="slide-menu" class="slide-menu">
+            <!-- Populated by JavaScript -->
+        </ul>
+    </aside>
+
+    <!-- Main Presentation Container -->
+    <main id="presentation" class="presentation">
+        <!-- Slides will be injected here by JavaScript -->
+    </main>
+
+    <!-- Progress Bar -->
+    <div id="progress-bar" class="progress-bar">
+        <div id="progress-fill" class="progress-fill"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="presentation-footer">
+        <div class="footer-left">
+            <span>Leon Kreso & Sofia Butkovskaia</span>
+        </div>
+        <div class="footer-center">
+            <span>Faculty of Tourism and Hospitality Management, Opatija</span>
+        </div>
+        <div class="footer-right">
+            <span>November 2025</span>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>

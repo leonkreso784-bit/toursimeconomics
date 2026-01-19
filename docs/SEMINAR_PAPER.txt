@@ -1,0 +1,1696 @@
+================================================================================
+                    GASTRONOMY TOURISM ECONOMICS:
+           A COMPARATIVE ANALYSIS OF CROATIA AND RUSSIA
+================================================================================
+
+                           SEMINAR PAPER
+
+Course: Economics in Tourism
+Institution: Faculty of Tourism and Hospitality Management, Opatija
+University of Rijeka
+
+Authors: Leon Kreso, Sofia Butkovskaia
+
+Date: November 2025
+
+================================================================================
+                          TABLE OF CONTENTS
+================================================================================
+
+1. INTRODUCTION
+   1.1 Research Context and Rationale
+   1.2 Research Objectives
+   1.3 Research Questions
+   1.4 Scope and Limitations
+   1.5 Paper Structure
+
+2. THEORETICAL FRAMEWORK
+   2.1 Defining Gastronomy Tourism
+   2.2 Economic Dimensions of Food Tourism
+   2.3 Tourism Multiplier Effects
+   2.4 Value Chain Theory in Gastronomy Tourism
+   2.5 Destination Competitiveness and Gastronomy
+   2.6 Conceptual Framework for Analysis
+
+3. METHODOLOGY
+   3.1 Research Approach
+   3.2 Data Sources and Collection
+   3.3 Analytical Framework
+   3.4 Limitations of Secondary Data
+
+4. ECONOMIC ANALYSIS: CROATIA
+   4.1 Macroeconomic Tourism Context
+   4.2 GDP Contribution and Tourism Dependency
+   4.3 Employment Generation
+   4.4 Regional Gastronomy Distribution
+   4.5 Key Gastronomic Products and Economic Value
+   4.6 Value Chain Analysis
+   4.7 International Market Positioning
+   4.8 Seasonality Challenges and Mitigation
+
+5. ECONOMIC ANALYSIS: RUSSIA
+   5.1 Macroeconomic Context
+   5.2 Tourism in a Diversified Economy
+   5.3 Domestic vs International Tourism
+   5.4 Regional Gastronomy Diversity
+   5.5 Key Gastronomic Products
+   5.6 Value Chain Development
+   5.7 International Market Integration Challenges
+   5.8 Recent Developments and Policy Focus
+
+6. COMPARATIVE ANALYSIS
+   6.1 Economic Indicators Comparison
+   6.2 Tourism Dependency Analysis
+   6.3 Gastronomy as Economic Driver
+   6.4 Branding and Marketing Effectiveness
+   6.5 Value Chain Integration
+   6.6 Economic Multiplier Effects
+   6.7 SWOT Comparison
+   6.8 Development Models Comparison
+
+7. DISCUSSION
+   7.1 Key Findings Interpretation
+   7.2 Policy Implications
+   7.3 Theoretical Contributions
+   7.4 Practical Implications
+
+8. CONCLUSION
+   8.1 Summary of Main Findings
+   8.2 Key Comparative Insights
+   8.3 Policy Recommendations
+   8.4 Future Research Directions
+   8.5 Final Remarks
+
+REFERENCES
+
+APPENDICES
+
+
+================================================================================
+                           1. INTRODUCTION
+================================================================================
+
+1.1 Research Context and Rationale
+----------------------------------
+
+In contemporary tourism, gastronomy has evolved far beyond its traditional role
+as a secondary service component. Food and drink have become strategic elements
+of destination branding, local economic development, and primary tourist
+motivation. The global gastronomy tourism market represents one of the fastest-
+growing segments of the tourism industry, with tourists increasingly selecting
+destinations based on culinary experiences rather than traditional sun-sea-sand
+attractions.
+
+This transformation carries significant economic implications. Gastronomy
+tourism creates direct employment in restaurants, hotels, and food services,
+while simultaneously generating substantial indirect effects through linkages
+with agriculture, food processing, transportation, and retail sectors. The
+economic multiplier effects of gastronomy tourism can be particularly powerful
+in regions where strong connections exist between local food production and
+tourism consumption.
+
+However, the economic impact of gastronomy tourism varies dramatically across
+countries depending on their overall economic structure, tourism dependency,
+market orientation, and value chain development. This variation provides a
+compelling rationale for comparative economic analysis.
+
+Croatia and the Russian Federation represent two contrasting cases that
+illuminate the diverse economic roles gastronomy tourism can play:
+
+- CROATIA represents a small, open, tourism-dependent economy where
+  international tourism receipts constitute approximately 17-19% of GDP.
+  Gastronomy functions as a primary tourism driver, with strong international
+  branding and deep integration with local agricultural production.
+
+- RUSSIA represents a large, diversified economy where international tourism
+  contributes less than 0.5% of GDP. Gastronomy serves primarily as a cultural
+  and domestic consumption asset, with emerging but underdeveloped international
+  gastronomy tourism potential.
+
+This contrast offers a unique opportunity to examine how gastronomy tourism
+economics differ between tourism-oriented and diversified economies, between
+small nations dependent on international visitors and continental powers with
+vast domestic markets.
+
+
+1.2 Research Objectives
+-----------------------
+
+This research pursues the following objectives:
+
+1. To analyze the economic contribution of gastronomy tourism to national
+   economies in Croatia and Russia, with emphasis on GDP contribution,
+   employment generation, and regional development effects.
+
+2. To compare the role of gastronomy as a tourism driver versus gastronomy
+   as a cultural and domestic consumption asset in contrasting economic
+   contexts.
+
+3. To evaluate the value chain integration between agriculture, food
+   processing, hospitality, and tourism in both countries.
+
+4. To assess the effectiveness of gastronomy branding and international
+   market positioning in generating economic returns.
+
+5. To identify strengths, weaknesses, opportunities, and threats in
+   gastronomy tourism development for both countries.
+
+6. To provide evidence-based policy recommendations for enhancing the
+   economic impact of gastronomy tourism.
+
+
+1.3 Research Questions
+----------------------
+
+This paper addresses the following research questions:
+
+RQ1: How does the economic contribution of gastronomy tourism differ between
+     a tourism-dependent economy (Croatia) and a diversified economy (Russia)?
+
+RQ2: What role does gastronomy play in tourism motivation and destination
+     competitiveness in each country?
+
+RQ3: How effectively are value chains integrated between agricultural
+     production, food processing, and tourism consumption?
+
+RQ4: What factors explain the different levels of international market
+     integration in gastronomy tourism between the two countries?
+
+RQ5: What strategic approaches can maximize the economic benefits of
+     gastronomy tourism in each national context?
+
+
+1.4 Scope and Limitations
+-------------------------
+
+This study focuses on the macroeconomic dimensions of gastronomy tourism,
+utilizing secondary data from official statistical sources, international
+organizations (UN Tourism, World Bank), and academic literature. The analysis
+covers the period 2015-2024, with particular emphasis on post-2020 recovery
+trends.
+
+Limitations include:
+- Reliance on secondary data with varying levels of gastronomy-specific detail
+- Limited availability of recent Russian tourism data due to geopolitical factors
+- Difficulty in isolating gastronomy tourism from general tourism statistics
+- Cross-country comparison challenges due to different statistical methodologies
+
+
+1.5 Paper Structure
+-------------------
+
+Following this introduction, Section 2 establishes the theoretical framework
+for analyzing gastronomy tourism economics. Section 3 describes the methodology
+and analytical approach. Sections 4 and 5 present detailed economic analyses
+of Croatia and Russia respectively. Section 6 provides systematic comparative
+analysis. Section 7 discusses findings and implications. Section 8 concludes
+with key insights and recommendations.
+
+
+================================================================================
+                       2. THEORETICAL FRAMEWORK
+================================================================================
+
+2.1 Defining Gastronomy Tourism
+-------------------------------
+
+Gastronomy tourism, also referred to as culinary tourism, food tourism, or
+gastronomic tourism, encompasses travel where the primary or significant
+motivation involves experiencing the food and drink of a destination. The
+World Tourism Organization (UNWTO) defines gastronomy tourism as "a type of
+tourism activity characterized by the visitor's experience linked with food
+and related products and activities while travelling" (UNWTO, 2012).
+
+From an economic perspective, gastronomy tourism extends beyond restaurant
+dining to include:
+
+- Visits to food producers (farms, wineries, olive oil mills, cheese makers)
+- Participation in cooking classes and culinary workshops
+- Attendance at food festivals and gastronomic events
+- Food-related retail purchases (local products, souvenirs)
+- Food tours and guided culinary experiences
+
+This breadth creates multiple economic channels through which gastronomy
+tourism generates value.
+
+
+2.2 Economic Dimensions of Food Tourism
+---------------------------------------
+
+The economic significance of gastronomy tourism operates through several
+interconnected dimensions:
+
+DIRECT ECONOMIC EFFECTS
+- Restaurant and hospitality revenue
+- Food retail sales
+- Culinary event ticket sales
+- Cooking class and tour operator income
+
+INDIRECT ECONOMIC EFFECTS
+- Agricultural production for tourism consumption
+- Food processing and manufacturing
+- Transportation and logistics
+- Marketing and promotional services
+
+INDUCED ECONOMIC EFFECTS
+- Household spending from tourism-generated income
+- Investment in tourism infrastructure
+- Tax revenue generation
+
+Research consistently demonstrates that food expenditure constitutes a
+substantial portion of total tourist spending. Studies indicate that
+tourists typically allocate 25-35% of their travel budget to food and
+beverage, with gastronomy-motivated tourists spending even higher proportions
+(Gheorghe et al., 2014).
+
+
+2.3 Tourism Multiplier Effects
+------------------------------
+
+The tourism multiplier concept, derived from Keynesian economics, measures
+how initial tourism expenditure generates additional economic activity through
+successive rounds of spending. In gastronomy tourism, multiplier effects can
+be particularly strong when:
+
+1. Local sourcing is high (restaurants use local agricultural products)
+2. Labor intensity is significant (hospitality employs local workers)
+3. Leakages are minimized (profits remain within the destination)
+4. Backward linkages are developed (tourism stimulates local production)
+
+The multiplier formula can be expressed as:
+
+    Tourism Multiplier = 1 / (1 - MPC × (1 - import propensity))
+
+Where MPC is the marginal propensity to consume from tourism income.
+
+Countries with strong local supply chains and limited import dependency
+typically exhibit higher tourism multipliers. This theoretical principle
+has important implications for comparing Croatia (smaller economy, potential
+higher import dependency) and Russia (larger economy, potential greater
+self-sufficiency in food production).
+
+
+2.4 Value Chain Theory in Gastronomy Tourism
+--------------------------------------------
+
+The value chain concept, introduced by Porter (1985), provides a framework
+for analyzing how economic value is created and distributed across linked
+activities. In gastronomy tourism, the value chain includes:
+
+    Agriculture → Processing → Distribution → Hospitality → Tourism → Consumer
+
+Each stage adds value and generates economic returns:
+
+PRIMARY ACTIVITIES:
+- Agricultural production (farming, viticulture, animal husbandry)
+- Food processing (cheese making, curing, fermentation)
+- Distribution and logistics
+- Restaurant and hospitality services
+- Tourist experience delivery
+
+SUPPORT ACTIVITIES:
+- Quality certification and food safety
+- Marketing and branding
+- Training and skill development
+- Infrastructure provision
+- Research and innovation
+
+Value chain integration refers to the extent to which these activities are
+connected and coordinated within a destination. High integration creates
+stronger economic linkages and distributes benefits across sectors and regions.
+
+
+2.5 Destination Competitiveness and Gastronomy
+----------------------------------------------
+
+Destination competitiveness theory (Crouch & Ritchie, 1999; Dwyer & Kim, 2003)
+identifies multiple factors that determine a destination's ability to attract
+tourists and generate economic benefits. Within this framework, gastronomy
+contributes to competitiveness through:
+
+INHERITED RESOURCES
+- Traditional recipes and culinary heritage
+- Indigenous ingredients and terroir
+- Cultural food practices and rituals
+
+CREATED RESOURCES
+- Restaurant infrastructure
+- Culinary training institutions
+- Food festivals and events
+- Quality certification systems
+
+SUPPORTING FACTORS
+- Transportation accessibility
+- Accommodation quality
+- Marketing effectiveness
+- Policy environment
+
+DEMAND CONDITIONS
+- Tourist preferences and motivations
+- Market trends toward experiential tourism
+- Health and sustainability consciousness
+
+Destinations that effectively leverage gastronomic resources within a
+competitive framework can differentiate themselves and command premium
+pricing, thereby enhancing economic returns.
+
+
+2.6 Conceptual Framework for Analysis
+-------------------------------------
+
+Based on the theoretical foundations, this paper employs a conceptual
+framework that analyzes gastronomy tourism economics across four dimensions:
+
+DIMENSION 1: ECONOMIC CONTRIBUTION
+- GDP contribution (direct, indirect, induced)
+- Employment generation
+- Regional economic distribution
+
+DIMENSION 2: VALUE CHAIN INTEGRATION
+- Agriculture-tourism linkages
+- Local sourcing rates
+- Multiplier potential
+
+DIMENSION 3: MARKET POSITIONING
+- International vs domestic focus
+- Branding effectiveness
+- Competitive differentiation
+
+DIMENSION 4: DEVELOPMENT CONTEXT
+- Economic structure (tourism-dependent vs diversified)
+- Policy environment
+- Infrastructure development stage
+
+This framework guides the comparative analysis of Croatia and Russia in
+subsequent sections.
+
+
+================================================================================
+                          3. METHODOLOGY
+================================================================================
+
+3.1 Research Approach
+---------------------
+
+This study employs a comparative case study methodology, utilizing secondary
+data analysis to examine gastronomy tourism economics in Croatia and Russia.
+The comparative approach is particularly suited to this research because:
+
+1. It enables identification of how economic context shapes gastronomy
+   tourism outcomes
+2. It reveals both common patterns and unique features
+3. It provides basis for transferable insights and policy learning
+
+The analysis combines quantitative economic indicators with qualitative
+assessment of value chains, branding, and policy environments.
+
+
+3.2 Data Sources and Collection
+-------------------------------
+
+Primary data sources include:
+
+INTERNATIONAL SOURCES
+- UN Tourism (UNWTO): International tourism arrivals and receipts
+- World Bank: GDP data, economic indicators
+- World Travel & Tourism Council (WTTC): Tourism satellite accounting
+
+NATIONAL SOURCES - CROATIA
+- Croatian Bureau of Statistics
+- Ministry of Tourism and Sports
+- Croatian National Tourist Board
+- Institute for Tourism, Zagreb
+
+NATIONAL SOURCES - RUSSIA
+- Russian Federal State Statistics Service (Rosstat)
+- Federal Agency for Tourism
+- Regional tourism authorities
+
+ACADEMIC SOURCES
+- Peer-reviewed journal articles
+- Conference proceedings
+- Research reports
+
+Data collection focused on the period 2015-2024, with emphasis on capturing
+both pre-pandemic trends and post-2020 recovery patterns.
+
+
+3.3 Analytical Framework
+------------------------
+
+The analysis proceeds through three stages:
+
+STAGE 1: INDIVIDUAL COUNTRY ANALYSIS
+- Macroeconomic tourism context
+- Gastronomy tourism characteristics
+- Value chain assessment
+- Market positioning evaluation
+
+STAGE 2: COMPARATIVE ANALYSIS
+- Economic indicators comparison
+- Tourism dependency analysis
+- Model comparison (tourism-oriented vs diversified)
+- SWOT analysis
+
+STAGE 3: SYNTHESIS AND IMPLICATIONS
+- Key findings integration
+- Policy implications
+- Strategic recommendations
+
+
+3.4 Limitations of Secondary Data
+---------------------------------
+
+Several limitations affect this analysis:
+
+1. SPECIFICITY: Official statistics rarely isolate gastronomy tourism from
+   general tourism data, requiring inference from broader indicators.
+
+2. COMPARABILITY: Different statistical methodologies between countries
+   may affect direct comparisons.
+
+3. TIMELINESS: Some indicators, particularly for Russia, have limited
+   recent availability due to geopolitical circumstances.
+
+4. CAUSALITY: Secondary data analysis can identify correlations but
+   establishing causality requires careful interpretation.
+
+These limitations are acknowledged and addressed through triangulation of
+multiple data sources and careful qualification of findings.
+
+
+================================================================================
+                   4. ECONOMIC ANALYSIS: CROATIA
+================================================================================
+
+4.1 Macroeconomic Tourism Context
+---------------------------------
+
+Croatia is a small, open economy where tourism plays a dominant role in
+economic structure. With a population of approximately 3.9 million and
+GDP of 92.5 billion USD (2024), Croatia has developed one of Europe's most
+tourism-dependent economic models.
+
+Key macroeconomic characteristics:
+
+- GDP per capita: 23,932 USD (2024), reflecting upper-middle income status
+- Economic structure: Services-dominated (approximately 70% of GDP)
+- EU membership since 2013, Eurozone membership since 2023
+- Schengen Area membership since 2023
+
+The Croatian economy's openness and EU integration facilitate tourism flows,
+particularly from major European source markets (Germany, Austria, Italy,
+Slovenia, Poland).
+
+
+4.2 GDP Contribution and Tourism Dependency
+-------------------------------------------
+
+Tourism's contribution to Croatian GDP represents one of the highest levels
+globally:
+
+INTERNATIONAL TOURISM RECEIPTS AS PERCENTAGE OF GDP:
+
+    Year    | Receipts (bil. USD) | GDP (bil. USD) | % of GDP
+    --------|---------------------|----------------|----------
+    2020    | 5.50                | 57.96          | 9.49%
+    2021    | 10.80               | 69.01          | 15.65%
+    2022    | 13.40               | 71.20          | 18.82%
+    2023    | 15.80               | 84.39          | 18.72%
+    2024    | 16.20               | 92.53          | 17.51%
+
+Source: UN Tourism Dashboard, 2025; Author's calculations
+
+These figures represent only direct international tourism receipts. When
+indirect and induced effects are included, the World Travel & Tourism
+Council estimates tourism's total contribution to Croatian GDP exceeds
+25% in peak years.
+
+This extreme tourism dependency creates both opportunities and vulnerabilities:
+
+OPPORTUNITIES:
+- Strong incentives to develop and maintain tourism quality
+- High political priority for tourism sector
+- Established international market position
+
+VULNERABILITIES:
+- Economic exposure to external shocks (pandemic, geopolitical events)
+- Seasonal employment patterns
+- Potential over-reliance limiting economic diversification
+
+
+4.3 Employment Generation
+-------------------------
+
+Tourism and hospitality represent critical employment sectors in Croatia:
+
+EMPLOYMENT TRENDS IN TOURISM & TRAVEL SECTOR (thousands):
+
+    Year    | Employment
+    --------|------------
+    2015    | 90
+    2016    | 93
+    2017    | 92
+    2018    | 103
+    2019    | 115
+
+Source: Ministry of Tourism and Sports, Croatia, 2024
+
+The growth from 90,000 to 115,000 jobs between 2015-2019 (28% increase)
+demonstrates tourism's role as a dynamic employment generator. However,
+this employment is characterized by:
+
+- High seasonality (concentrated in summer months)
+- Significant share of temporary and seasonal contracts
+- Regional concentration along the Adriatic coast
+- Skills requirements ranging from unskilled to professional
+
+Gastronomy specifically contributes to employment through:
+- Restaurant and cafe operations
+- Hotel food and beverage departments
+- Catering services
+- Food production (wineries, olive mills, farms)
+- Culinary education and training
+
+
+4.4 Regional Gastronomy Distribution
+------------------------------------
+
+Croatian gastronomy exhibits strong regional differentiation, creating
+opportunities for tourism diversification:
+
+COASTAL REGIONS (ISTRIA, KVARNER, DALMATIA):
+- Mediterranean cuisine influence
+- Seafood, olive oil, wine focus
+- High international tourism integration
+- Premium positioning and pricing
+
+CONTINENTAL REGIONS (SLAVONIA, ZAGORJE, ZAGREB):
+- Central European influences
+- Meat, grain, dairy products
+- Lower tourism integration
+- Emerging gastronomy tourism potential
+
+This regional variation supports product diversification and can help
+address seasonality by promoting continental gastronomy tourism in
+shoulder seasons.
+
+
+4.5 Key Gastronomic Products and Economic Value
+-----------------------------------------------
+
+Croatia's gastronomy tourism leverages several high-value product categories:
+
+WINE:
+- 130+ indigenous grape varieties
+- Key regions: Istria, Dalmatia, Slavonia
+- Notable varieties: Malvazija, Plavac Mali, Graševina
+- Economic value: Wine tourism generates estimated 50-60 million EUR annually
+
+OLIVE OIL:
+- Premium production concentrated in Istria
+- International awards and recognition
+- Price premium: Croatian olive oils command 2-3x Mediterranean average
+- Estimated production: 5,000+ tonnes annually
+
+TRUFFLES:
+- Istrian truffles among world's finest
+- Both white (Tuber magnatum) and black varieties
+- High-value tourism product (truffle hunting experiences)
+- Significant price premium: White truffles up to 3,000 EUR/kg
+
+PRŠUT (DRY-CURED HAM):
+- Dalmatian and Istrian varieties
+- Protected geographical indications
+- Integration with wine and cheese tourism
+
+CHEESE:
+- Paški sir (Pag island cheese) - internationally recognized
+- Traditional continental varieties
+- Agritourism integration
+
+These products create value through:
+1. Direct sales to tourists
+2. Restaurant incorporation
+3. Export and international reputation
+4. Tourism attraction and destination branding
+
+
+4.6 Value Chain Analysis
+------------------------
+
+Croatian gastronomy tourism demonstrates relatively strong value chain
+integration:
+
+AGRICULTURE-TOURISM LINKAGES:
+- Family farms supplying local restaurants (agritourism)
+- Cooperative marketing of regional products
+- Farm visits integrated into tourism offerings
+- Growing organic and sustainable production
+
+PROCESSING-TOURISM LINKAGES:
+- Wineries with direct tourist sales and tasting rooms
+- Olive oil mills offering tours and tastings
+- Artisanal food producers with retail operations
+
+HOSPITALITY-AGRICULTURE LINKAGES:
+- Increasing emphasis on local sourcing in restaurants
+- "From farm to table" concepts gaining prominence
+- Chef partnerships with local producers
+
+CHALLENGES IN VALUE CHAIN:
+- Small scale of many producers limits consistency
+- Infrastructure gaps in some regions
+- Need for quality standardization
+- Marketing coordination across value chain actors
+
+The Croatian tourism value chain has evolved significantly since EU
+accession, with quality improvements, certification schemes, and
+increased professionalization.
+
+
+4.7 International Market Positioning
+------------------------------------
+
+Croatia has achieved strong international positioning for gastronomy
+tourism:
+
+BRAND ELEMENTS:
+- Mediterranean cuisine heritage
+- Unique indigenous products (truffles, wines)
+- Integration with cultural and natural attractions
+- "Undiscovered" or "authentic" positioning
+
+MARKETING CHANNELS:
+- Croatian National Tourist Board campaigns
+- Regional destination marketing organizations
+- International food and wine media coverage
+- Social media and influencer engagement
+
+COMPETITIVE POSITION:
+- Differentiation from neighboring Italy through authenticity
+- Price competitiveness relative to Western European destinations
+- Emerging recognition as premium gastronomy destination
+
+MARKET REACH:
+- Primary source markets: Germany, Austria, Italy, Slovenia
+- Growing markets: UK, Poland, Czech Republic
+- Emerging markets: USA, Asia
+
+International recognition is evidenced by:
+- Michelin Guide coverage
+- Inclusion in international wine tourism circuits
+- Food media and guidebook features
+
+
+4.8 Seasonality Challenges and Mitigation
+-----------------------------------------
+
+Extreme seasonality represents Croatia's primary tourism challenge:
+
+SEASONAL CONCENTRATION:
+- 60%+ of tourist arrivals in July-August
+- Coastal destinations highly seasonal
+- Winter occupancy rates below 30%
+
+GASTRONOMY'S ROLE IN MITIGATION:
+- Food and wine events scheduled in shoulder seasons
+- Truffle season (autumn) extending tourism calendar
+- Wine harvest tourism in September-October
+- Continental gastronomy tourism year-round potential
+
+POLICY RESPONSES:
+- Promotion of off-season gastronomy experiences
+- Support for agritourism development
+- Investment in continental tourism infrastructure
+- Product diversification beyond coastal areas
+
+
+================================================================================
+                    5. ECONOMIC ANALYSIS: RUSSIA
+================================================================================
+
+5.1 Macroeconomic Context
+-------------------------
+
+Russia presents a fundamentally different economic context for analyzing
+gastronomy tourism:
+
+KEY CHARACTERISTICS:
+- World's largest country by area (17.1 million km²)
+- Population: approximately 146 million
+- GDP: 2,174 billion USD (2024)
+- GDP per capita: 14,889 USD (2024)
+
+ECONOMIC STRUCTURE:
+- Diversified but resource-dependent economy
+- Strong industrial and energy sectors
+- Large domestic market
+- Complex regional economic variation
+
+Russia's economic scale and diversification mean that tourism, while
+economically significant in absolute terms, represents a marginal share
+of overall economic activity.
+
+
+5.2 Tourism in a Diversified Economy
+------------------------------------
+
+Tourism's role in the Russian economy differs fundamentally from Croatia:
+
+INTERNATIONAL TOURISM RECEIPTS AS PERCENTAGE OF GDP:
+
+    Year    | Receipts (bil. USD) | GDP (bil. USD)  | % of GDP
+    --------|---------------------|-----------------|----------
+    2020    | 3.90                | 1,493.08        | 0.26%
+    2021    | 4.00                | 1,829.19        | 0.22%
+    2022    | 5.60                | 2,291.61        | 0.24%
+    2023    | 6.80                | 2,071.51        | 0.33%
+    2024    | 7.60                | 2,173.84        | 0.35%
+
+Source: UN Tourism Dashboard, 2025; Author's calculations
+
+International tourism contributes less than 0.5% of Russian GDP, compared
+to approximately 18% in Croatia. This 50-fold difference in relative
+contribution shapes fundamentally different policy priorities and
+development dynamics.
+
+However, in absolute terms, Russian tourism is substantial:
+- International receipts of 7.6 billion USD (2024)
+- Domestic tourism spending significantly larger
+- Employment of over 1.1 million in tourism sector (2019)
+
+
+5.3 Domestic vs International Tourism
+-------------------------------------
+
+Russia's tourism economy is primarily domestic-oriented:
+
+CHARACTERISTICS OF DOMESTIC TOURISM:
+- Vast internal market (146 million population)
+- Limited international travel propensity historically
+- Post-2020 acceleration of domestic tourism
+- Regional diversity providing varied experiences
+
+INTERNATIONAL TOURISM CONSTRAINTS:
+- Visa requirements for many source markets
+- Distance from major international markets
+- Language barriers
+- Image and perception challenges
+- Recent geopolitical impacts on international flows
+
+DOMESTIC GASTRONOMY TOURISM:
+- Growing interest in regional cuisines
+- Internal tourism routes featuring food experiences
+- Development of gastronomic festivals and events
+- Regional competition for domestic tourists
+
+
+5.4 Regional Gastronomy Diversity
+---------------------------------
+
+Russia's vast territory encompasses extraordinary gastronomic diversity:
+
+EUROPEAN RUSSIA:
+- Moscow and St. Petersburg: Sophisticated restaurant scenes
+- Central Russia: Traditional Russian cuisine heartland
+- Southern Russia: Caucasian influences, wine production
+
+CAUCASUS REGION:
+- Georgian, Armenian, Azerbaijani culinary influences
+- Grilled meats, spices, herbs
+- Unique regional products
+
+VOLGA REGION:
+- Tatar cuisine influence
+- River fish specialties
+- Agricultural heartland products
+
+SIBERIA:
+- Game meats, fish
+- Adaptation to harsh climate
+- Indigenous culinary traditions
+
+FAR EAST:
+- Asian culinary influences
+- Seafood prominence
+- Unique honey varieties
+
+This diversity creates potential for differentiated regional gastronomy
+tourism, though development and marketing remain fragmented.
+
+
+5.5 Key Gastronomic Products
+----------------------------
+
+Russian gastronomy features distinctive products with tourism potential:
+
+TRADITIONAL CUISINE:
+- Borscht, shchi, solyanka (soups)
+- Pelmeni, vareniki (dumplings)
+- Blini (pancakes)
+- Pirogi (pies)
+- Sturgeon and caviar (luxury segment)
+
+BEVERAGES:
+- Vodka (iconic product)
+- Kvass (traditional fermented drink)
+- Tea culture and traditions
+- Emerging wine regions (Krasnodar)
+
+REGIONAL SPECIALTIES:
+- Caucasian grilled meats (shashlik)
+- Tatar pastries and broths
+- Far Eastern seafood
+- Regional honey varieties
+
+CHALLENGES FOR TOURISM INTEGRATION:
+- Limited international recognition beyond vodka/caviar
+- Quality standardization issues
+- Fragmented marketing
+- Infrastructure gaps in regions
+
+
+5.6 Value Chain Development
+---------------------------
+
+Russian gastronomy value chains show different characteristics:
+
+STRENGTHS:
+- Large-scale agricultural production capability
+- Self-sufficiency in many food categories
+- Growing restaurant sector in major cities
+- Emerging farm-to-table movement
+
+WEAKNESSES:
+- Limited tourism-agriculture integration
+- Fragmented regional development
+- Quality consistency challenges
+- Underdeveloped agritourism sector
+
+DEVELOPMENT TRENDS:
+- Increasing interest in local sourcing
+- Growth of farmers' markets and food festivals
+- Investment in restaurant infrastructure
+- Regional gastronomy tourism programs emerging
+
+The value chain between agricultural production and tourism consumption
+remains less developed than in Croatia, representing both a challenge
+and an opportunity.
+
+
+5.7 International Market Integration Challenges
+-----------------------------------------------
+
+Russia faces significant challenges in international gastronomy tourism:
+
+MARKET ACCESS BARRIERS:
+- Visa requirements (though simplified for some countries)
+- Distance from Western source markets
+- Competing destinations with established reputations
+- Language barriers in tourism services
+
+BRANDING CHALLENGES:
+- Limited international recognition of Russian gastronomy
+- Stereotypical associations (vodka, caviar) vs. culinary diversity
+- Lack of coordinated international marketing
+- Image issues affecting tourism overall
+
+INFRASTRUCTURE GAPS:
+- Variable quality outside major cities
+- Limited English-language services
+- Transportation challenges to regional destinations
+- Accommodation constraints in gastronomic regions
+
+RECENT GEOPOLITICAL IMPACTS:
+- Reduced Western tourist flows
+- Shift toward domestic and alternative markets
+- Accelerated domestic tourism development
+
+
+5.8 Recent Developments and Policy Focus
+----------------------------------------
+
+Recent policy and market developments include:
+
+DOMESTIC TOURISM PROMOTION:
+- Government programs supporting internal tourism
+- Regional gastronomy route development
+- Festival and event support
+- Infrastructure investment
+
+QUALITY IMPROVEMENT INITIATIVES:
+- Restaurant industry professionalization
+- Culinary education expansion
+- Quality certification programs
+- Regional product designation efforts
+
+EMERGING GASTRONOMY TOURISM REGIONS:
+- Krasnodar wine region development
+- Caucasus mountain gastronomy routes
+- Golden Ring gastronomic experiences
+- Far Eastern seafood tourism
+
+These developments suggest growing recognition of gastronomy tourism's
+potential, though from a lower base than established destinations.
+
+
+================================================================================
+                      6. COMPARATIVE ANALYSIS
+================================================================================
+
+6.1 Economic Indicators Comparison
+----------------------------------
+
+MACROECONOMIC COMPARISON (2024 DATA):
+
+    Indicator                    | Croatia    | Russia      | Ratio
+    -----------------------------|------------|-------------|-------
+    GDP (billion USD)            | 92.53      | 2,173.84    | 1:23.5
+    GDP per Capita (USD)         | 23,932     | 14,889      | 1.6:1
+    Tourism Receipts (bil. USD)  | 16.20      | 7.60        | 2.1:1
+    Tourism % of GDP             | 17.51%     | 0.35%       | 50:1
+    Tourism Employment (000s)    | 115        | 1,122       | 1:9.8
+
+Key observations:
+
+1. Despite Russia's much larger economy (23.5x), Croatia generates higher
+   absolute tourism receipts (2.1x) from international visitors.
+
+2. Tourism's relative economic contribution differs by a factor of 50
+   (17.51% vs 0.35% of GDP).
+
+3. Russia employs approximately 10x more people in tourism, but from a
+   population 37x larger than Croatia.
+
+4. Croatia's GDP per capita exceeds Russia's by 60%, partly reflecting
+   successful tourism-driven development.
+
+
+6.2 Tourism Dependency Analysis
+-------------------------------
+
+CROATIA - HIGH DEPENDENCY MODEL:
+
+Characteristics:
+- Tourism as primary economic driver
+- High exposure to external shocks
+- Strong incentives for quality investment
+- Political priority for tourism sector
+- Risk of over-specialization
+
+Implications for Gastronomy:
+- Gastronomy integrated into core tourism strategy
+- Strong investment in culinary infrastructure
+- International branding imperative
+- Seasonality mitigation priority
+
+RUSSIA - LOW DEPENDENCY MODEL:
+
+Characteristics:
+- Tourism as supplementary activity
+- Economic resilience from diversification
+- Lower political priority for tourism
+- Regional variation in tourism importance
+- Domestic market buffer
+
+Implications for Gastronomy:
+- Gastronomy primarily serves domestic consumption
+- Regional development driver potential
+- Limited international marketing imperative
+- Cultural preservation motivation
+
+COMPARATIVE INSIGHT:
+
+High tourism dependency (Croatia) creates strong economic incentives for
+gastronomy tourism development but also generates vulnerabilities. Low
+dependency (Russia) reduces pressure but may limit investment and
+marketing resources.
+
+
+6.3 Gastronomy as Economic Driver
+---------------------------------
+
+CROATIA: GASTRONOMY AS TOURISM ATTRACTION
+
+Role: Primary tourist motivation and destination differentiator
+
+Economic Functions:
+- Attracting international visitors
+- Extending length of stay
+- Increasing spending per visitor
+- Building destination brand
+- Supporting agricultural sector
+- Creating year-round employment potential
+
+Evidence:
+- Premium pricing for gastronomic experiences
+- International media recognition
+- Growing share of culinary-motivated tourists
+- Investment in gastronomy infrastructure
+
+RUSSIA: GASTRONOMY AS CULTURAL ASSET
+
+Role: Cultural heritage and domestic tourism component
+
+Economic Functions:
+- Supporting domestic tourism diversification
+- Regional identity and development
+- Cultural preservation and transmission
+- Emerging international niche potential
+- Agricultural sector support
+
+Evidence:
+- Growing domestic gastronomy tourism interest
+- Regional festival development
+- Emerging restaurant scene in major cities
+- Limited but growing international recognition
+
+
+6.4 Branding and Marketing Effectiveness
+----------------------------------------
+
+CROATIA - EFFECTIVE INTERNATIONAL BRANDING:
+
+Strengths:
+- Consistent "Mediterranean" positioning
+- Unique product stories (truffles, indigenous wines)
+- Integration with broader destination brand
+- Active international marketing
+- Quality certification and awards
+
+Results:
+- High international recognition
+- Price premiums for Croatian products
+- Growing gastronomy-motivated visitor segment
+- Media coverage in international food publications
+
+RUSSIA - DEVELOPING BRAND POTENTIAL:
+
+Challenges:
+- Fragmented messaging
+- Stereotypical associations dominating
+- Limited coordinated international marketing
+- Regional diversity difficult to communicate
+
+Opportunities:
+- Authenticity and "undiscovered" positioning
+- Unique regional stories
+- Growing interest in "off-the-beaten-path"
+- Social media enabling direct communication
+
+COMPARATIVE INSIGHT:
+
+Croatia demonstrates how smaller destinations can build strong gastronomy
+brands through consistent positioning and quality focus. Russia's larger
+scale and diversity create branding complexity requiring different
+approaches.
+
+
+6.5 Value Chain Integration
+---------------------------
+
+VALUE CHAIN INTEGRATION COMPARISON:
+
+    Dimension               | Croatia        | Russia         | Assessment
+    ------------------------|----------------|----------------|------------
+    Agriculture-Tourism     | Strong         | Developing     | Croatia leads
+    Local Sourcing Rate     | High (60-70%)  | Moderate (30%) | Croatia leads
+    Processing Integration  | Well-developed | Fragmented     | Croatia leads
+    Quality Certification   | Advanced       | Emerging       | Croatia leads
+    Agritourism Development | Mature         | Early stage    | Croatia leads
+    Scale Potential         | Limited        | High           | Russia leads
+    Diversity               | Regional       | Continental    | Russia leads
+
+Croatia demonstrates more mature value chain integration, benefiting from:
+- Smaller scale facilitating coordination
+- EU quality frameworks (PDO, PGI)
+- Longer tourism development history
+- International market pressure for quality
+
+Russia has greater potential scale but requires:
+- Coordination mechanisms across vast territory
+- Quality standardization development
+- Tourism-agriculture connection building
+- Regional destination development
+
+
+6.6 Economic Multiplier Effects
+-------------------------------
+
+MULTIPLIER POTENTIAL COMPARISON:
+
+CROATIA:
+- Estimated tourism multiplier: 1.8-2.2
+- High local sourcing increases multiplier
+- Seasonal leakage (imported labor) reduces multiplier
+- Small economy limits absorption capacity
+
+RUSSIA:
+- Estimated tourism multiplier: 1.4-1.6
+- Large economy provides absorption capacity
+- Import substitution potential high
+- Regional variation significant
+
+GASTRONOMY-SPECIFIC MULTIPLIERS:
+
+Gastronomy tourism typically generates higher multipliers than general
+tourism due to:
+- Labor intensity of food services
+- Agricultural backward linkages
+- Local product sourcing potential
+- Reduced import leakage
+
+Croatia's stronger value chain integration suggests higher gastronomy-
+specific multipliers despite smaller economy.
+
+
+6.7 SWOT Comparison
+-------------------
+
+CROATIA SWOT:
+
+Strengths:
+- Established international brand
+- High-quality product base
+- Strong value chain integration
+- EU market access and standards
+- Professional tourism sector
+
+Weaknesses:
+- Extreme seasonality
+- High tourism dependency risk
+- Small scale limits growth
+- Labor market constraints
+- Coastal concentration
+
+Opportunities:
+- Premium positioning enhancement
+- Continental region development
+- Shoulder season expansion
+- Emerging market development
+- Sustainable/authentic tourism trends
+
+Threats:
+- Competition from similar destinations
+- Climate change impacts
+- Over-tourism concerns
+- Economic shock vulnerability
+- Labor availability challenges
+
+RUSSIA SWOT:
+
+Strengths:
+- Enormous domestic market
+- Regional diversity
+- Unique culinary heritage
+- Self-sufficiency potential
+- Scale advantages
+
+Weaknesses:
+- Limited international recognition
+- Infrastructure gaps
+- Quality inconsistency
+- Marketing fragmentation
+- Language barriers
+
+Opportunities:
+- Domestic tourism growth
+- Regional development driver
+- Authenticity positioning
+- Alternative market development
+- Digital marketing potential
+
+Threats:
+- Geopolitical constraints
+- Investment limitations
+- International isolation impacts
+- Competing domestic priorities
+- Infrastructure maintenance
+
+
+6.8 Development Models Comparison
+---------------------------------
+
+TWO CONTRASTING DEVELOPMENT MODELS:
+
+MODEL A: TOURISM-ORIENTED GASTRONOMY (CROATIA)
+
+Characteristics:
+- Gastronomy as export product
+- International market orientation
+- Premium pricing strategy
+- Strong branding investment
+- Quality certification emphasis
+
+Economic Logic:
+- Small domestic market necessitates export
+- Tourism provides market access
+- Value addition through experience
+- Competitive differentiation essential
+
+Success Factors:
+- Consistent quality
+- Strong marketing
+- Accessibility
+- International recognition
+
+MODEL B: CULTURALLY-ROOTED GASTRONOMY (RUSSIA)
+
+Characteristics:
+- Gastronomy as cultural heritage
+- Domestic market orientation
+- Regional development focus
+- Authenticity preservation
+- Emerging export potential
+
+Economic Logic:
+- Large domestic market sufficient
+- Cultural value beyond economics
+- Regional diversification tool
+- International market optional
+
+Success Factors:
+- Regional coordination
+- Quality standardization
+- Infrastructure development
+- Domestic marketing
+
+NEITHER MODEL IS INHERENTLY SUPERIOR:
+
+Each model suits different economic contexts:
+- Small, open economies benefit from export-oriented approach
+- Large, diversified economies can prioritize domestic development
+- Hybrid approaches may optimize outcomes
+
+
+================================================================================
+                           7. DISCUSSION
+================================================================================
+
+7.1 Key Findings Interpretation
+-------------------------------
+
+This comparative analysis reveals several important findings:
+
+FINDING 1: ECONOMIC STRUCTURE DETERMINES GASTRONOMY TOURISM'S ROLE
+
+The 50-fold difference in tourism's GDP contribution (17.51% vs 0.35%)
+reflects fundamental differences in economic structure, not simply
+differences in tourism quality or potential. Croatia's small, open
+economy naturally gravitates toward tourism specialization, while
+Russia's diversified economy relegates tourism to a supplementary role.
+
+Implication: Development strategies must align with economic structure
+rather than attempting to replicate models from different contexts.
+
+FINDING 2: ABSOLUTE VS RELATIVE IMPORTANCE CREATES DIFFERENT INCENTIVES
+
+Despite lower relative importance, Russia's tourism sector employs
+nearly 10 times more people than Croatia's. This absolute scale creates
+different stakeholder dynamics and policy priorities.
+
+Implication: Policy and investment decisions should consider both
+relative economic significance and absolute employment and revenue
+generation.
+
+FINDING 3: VALUE CHAIN INTEGRATION IS A KEY DIFFERENTIATOR
+
+Croatia's stronger value chain integration between agriculture,
+processing, and tourism generates higher economic multipliers and
+better distributes benefits across sectors and regions. This integration
+has developed over decades of tourism-oriented development.
+
+Implication: Gastronomy tourism development requires long-term value
+chain building, not just marketing and promotion.
+
+FINDING 4: INTERNATIONAL BRANDING EFFECTIVENESS VARIES WITH MARKET FOCUS
+
+Croatia's strong international gastronomy brand reflects both strategic
+marketing and the imperative created by international market dependence.
+Russia's limited international brand partly reflects the sufficient
+domestic market that reduces export pressure.
+
+Implication: Branding strategies should match market orientation, with
+export-oriented destinations requiring stronger international positioning.
+
+
+7.2 Policy Implications
+-----------------------
+
+FOR TOURISM-DEPENDENT ECONOMIES (CROATIA MODEL):
+
+1. Diversification Within Tourism:
+   - Develop gastronomy tourism to extend seasons
+   - Promote regional distribution beyond coastal areas
+   - Encourage premium positioning over volume growth
+
+2. Risk Management:
+   - Build economic buffers for tourism shocks
+   - Develop contingency plans for crisis periods
+   - Consider selective diversification beyond tourism
+
+3. Value Chain Strengthening:
+   - Maintain and enhance agriculture-tourism linkages
+   - Support small producer integration
+   - Invest in quality certification and standards
+
+FOR DIVERSIFIED ECONOMIES (RUSSIA MODEL):
+
+1. Regional Development Tool:
+   - Use gastronomy tourism for regional economic development
+   - Support destination development in gastronomic regions
+   - Coordinate regional marketing and branding
+
+2. Domestic Market Development:
+   - Prioritize domestic gastronomy tourism growth
+   - Develop regional gastronomy routes and circuits
+   - Support festival and event development
+
+3. Selective International Development:
+   - Focus international marketing on niche segments
+   - Develop specific regional brands rather than national
+   - Target accessible markets with cultural interest
+
+
+7.3 Theoretical Contributions
+-----------------------------
+
+This research contributes to gastronomy tourism theory by:
+
+1. Demonstrating how economic structure shapes gastronomy tourism
+   development paths
+
+2. Identifying two distinct development models (export-oriented vs
+   domestically-focused) with different success factors
+
+3. Highlighting the importance of value chain integration as a
+   determinant of economic impact
+
+4. Showing that tourism dependency creates both opportunities
+   (investment incentives) and vulnerabilities (shock exposure)
+
+
+7.4 Practical Implications
+--------------------------
+
+FOR DESTINATION MANAGERS:
+
+- Assess economic context before adopting development models
+- Prioritize value chain development alongside marketing
+- Match market focus (international vs domestic) with resources
+- Consider long-term sustainability of chosen development path
+
+FOR TOURISM BUSINESSES:
+
+- Invest in local sourcing relationships
+- Develop quality certification and standards
+- Build authentic stories and experiences
+- Collaborate with agricultural and processing sectors
+
+FOR INVESTORS:
+
+- Evaluate tourism dependency as risk factor
+- Consider value chain investment opportunities
+- Assess market access and branding potential
+- Understand regional development dynamics
+
+
+================================================================================
+                          8. CONCLUSION
+================================================================================
+
+8.1 Summary of Main Findings
+----------------------------
+
+This comparative analysis of gastronomy tourism economics in Croatia
+and Russia has revealed fundamental differences in how gastronomy
+contributes to national economies:
+
+1. Tourism contributes 17.51% of Croatian GDP versus 0.35% of Russian
+   GDP, representing a 50-fold difference in relative economic
+   significance.
+
+2. Croatia has developed gastronomy as a primary tourism driver with
+   strong international branding, while Russia's gastronomy serves
+   primarily domestic consumption and cultural functions.
+
+3. Value chain integration between agriculture, processing, and tourism
+   is substantially more developed in Croatia, generating higher
+   economic multipliers.
+
+4. Both countries face distinct challenges: Croatia's extreme tourism
+   dependency and seasonality versus Russia's international market
+   integration barriers and development fragmentation.
+
+
+8.2 Key Comparative Insights
+----------------------------
+
+The comparison illuminates several key insights:
+
+INSIGHT 1: Economic structure shapes gastronomy tourism's role more
+than inherent gastronomic quality or potential. Croatia's tourism
+orientation and Russia's diversification reflect broader economic
+contexts rather than gastronomy-specific factors.
+
+INSIGHT 2: Strong value chain integration is essential for maximizing
+gastronomy tourism's economic impact. Marketing alone cannot generate
+the multiplier effects that create broad-based economic benefits.
+
+INSIGHT 3: International branding effectiveness relates closely to
+market orientation. Export-dependent destinations require stronger
+international positioning than domestically-focused markets.
+
+INSIGHT 4: Neither the high-dependency tourism model nor the
+diversified economy model is inherently superior. Each creates
+different opportunities and risks that must be managed strategically.
+
+
+8.3 Policy Recommendations
+--------------------------
+
+FOR CROATIA:
+
+1. Continue developing gastronomy tourism as a seasonality mitigation
+   tool, with specific focus on autumn/winter experiences.
+
+2. Expand continental gastronomy tourism to reduce coastal concentration.
+
+3. Strengthen value chain integration through producer-restaurant
+   partnerships and quality certification.
+
+4. Build economic resilience through strategic diversification while
+   maintaining tourism excellence.
+
+FOR RUSSIA:
+
+1. Prioritize domestic gastronomy tourism development as a regional
+   economic development tool.
+
+2. Develop coordinated regional gastronomy brands rather than
+   attempting unified national positioning.
+
+3. Invest in value chain development linking agricultural production
+   to tourism consumption.
+
+4. Target selective international markets with authentic, differentiated
+   experiences.
+
+
+8.4 Future Research Directions
+------------------------------
+
+This analysis suggests several avenues for future research:
+
+1. Quantitative measurement of gastronomy-specific tourism multipliers
+   in different economic contexts
+
+2. Longitudinal analysis of value chain development and its economic
+   impacts
+
+3. Consumer research on gastronomy tourism motivations across markets
+
+4. Policy effectiveness evaluation for gastronomy tourism development
+   programs
+
+5. Climate change impacts on gastronomy tourism sustainability
+
+
+8.5 Final Remarks
+-----------------
+
+Gastronomy tourism represents a significant and growing economic
+phenomenon, but its impacts and development paths vary fundamentally
+across different economic contexts. The contrast between Croatia and
+Russia demonstrates that successful gastronomy tourism development
+requires strategies aligned with national economic structure, market
+orientation, and development stage.
+
+For small, tourism-dependent economies like Croatia, gastronomy tourism
+offers a path to differentiation, value addition, and sustainable
+development. For large, diversified economies like Russia, gastronomy
+tourism can serve as a regional development tool and cultural asset
+with emerging international potential.
+
+In both cases, the economic impact of gastronomy tourism depends
+critically on value chain integration, quality development, and
+strategic market positioning. Countries seeking to develop gastronomy
+tourism should focus not only on marketing and promotion but on
+building the productive connections that transform culinary heritage
+into broad-based economic benefit.
+
+
+================================================================================
+                           REFERENCES
+================================================================================
+
+Bridge to Moscow (2025). Russian cuisine. Retrieved from:
+    https://bridgetomoscow.com/russian-cuisine
+
+Crouch, G. I., & Ritchie, J. R. B. (1999). Tourism, competitiveness,
+    and societal prosperity. Journal of Business Research, 44(3), 137-152.
+
+Čomić, Đ. (1990). Psihologija turizma. Beograd: Turistička štampa.
+
+Drpić, K., & Vukman, M. (2014). Gastronomija kao važan dio turističke
+    ponude u Hrvatskoj. Praktični menadžment, 5(1), 62-67.
+
+Dwyer, L., & Kim, C. (2003). Destination competitiveness: Determinants
+    and indicators. Current Issues in Tourism, 6(5), 369-414.
+
+Express to Russia (2025). The Geography of Russia. Retrieved from:
+    https://www.expresstorussia.com/experience-russia/the-geography-of-russia.html
+
+Gheorghe, G., Tudorache, P., & Nistoreanu, P. (2014). Gastronomic tourism,
+    a new trend for contemporary tourism? Cactus Tourism Journal, 9(1), 12-21.
+
+Hrvatska enciklopedija (2025a). Popularna kultura. Zagreb: Leksikografski
+    zavod Miroslav Krleža.
+
+Hrvatska enciklopedija (2025b). Gastronomija. Zagreb: Leksikografski
+    zavod Miroslav Krleža.
+
+Hrvatska enciklopedija (2025c). Rusija. Zagreb: Leksikografski
+    zavod Miroslav Krleža.
+
+Hrvatska.eu (n.d.). Povijesne regije. Retrieved from:
+    https://www.croatia.eu/index.php/hr/home-hr/zemljopis-stanovnistvo/povijesne-regije
+
+Kireeva, Y., Romanov, A., Kalistratova, A., Romanova, T., & Norov, P. (2022).
+    Modern trends in the development of gastronomic tourism in the Russian
+    Federation. European Proceedings of Social and Behavioural Sciences.
+    DOI: 10.15405/epsbs.2022.08.11
+
+Ministarstvo turizma i sporta Republike Hrvatske (2024). Turizam u brojkama
+    2023. Retrieved from: https://www.htz.hr/sites/default/files/2024-08/
+    HTZ%20TUB%20HR_%202023_1.pdf
+
+Porter, M. E. (1985). Competitive Advantage: Creating and Sustaining
+    Superior Performance. New York: Free Press.
+
+Sorcaru, I. A. (2019). Gastronomy tourism – A sustainable alternative for
+    local economic development. Annals of Dunarea de Jos University of
+    Galati, Fascicle I, Economics and Applied Informatics, 25(1), 103-110.
+
+Statista (2025). Direct contribution of travel and tourism to employment
+    in Russia from 2012 to 2019. Retrieved from:
+    https://www.statista.com/statistics/895127/travel-and-tourism-employment-
+    direct-contribution-russia/
+
+Šuran, F. (2016). Slobodno vrijeme, putovanje i turizam: sociološki pristup.
+    Buje: Happy.
+
+TataNeu (2025). Russian food culture FAQs: Traditions, recipes, and more.
+    Retrieved from: https://www.tataneu.com/pages/travel/flights/russian-
+    food-culture-faqs-traditions-recipes-and-more
+
+UN Tourism (2025). UN Tourism Data Dashboard. Retrieved from:
+    https://www.untourism.int/tourism-data/un-tourism-tourism-dashboard
+
+Uniline (2025). Hrvatska gastronomija – Hrvatska kuhinja. Retrieved from:
+    https://uniline.hr/hr/vodic/vodic-gastronomija
+
+UNWTO (2012). Global Report on Food Tourism. Madrid: World Tourism Organization.
+
+World Travel & Tourism Council (2024). Economic Impact Reports.
+    Retrieved from: https://wttc.org/research/economic-impact
+
+
+================================================================================
+                           APPENDICES
+================================================================================
+
+APPENDIX A: Economic and Tourism Indicators (2020-2024)
+-------------------------------------------------------
+
+Table A1: Croatia Economic Indicators
+
+Year | GDP (bil USD) | GDP/cap (USD) | Tourism Receipts | % GDP
+-----|---------------|---------------|------------------|-------
+2020 | 57.963        | 14,808.50     | 5,500 mil        | 9.49%
+2021 | 69.006        | 17,789.90     | 10,800 mil       | 15.65%
+2022 | 71.198        | 18,466.10     | 13,400 mil       | 18.82%
+2023 | 84.393        | 21,865.50     | 15,800 mil       | 18.72%
+2024 | 92.526        | 23,931.50     | 16,200 mil       | 17.51%
+
+Table A2: Russia Economic Indicators
+
+Year | GDP (bil USD)  | GDP/cap (USD) | Tourism Receipts | % GDP
+-----|----------------|---------------|------------------|-------
+2020 | 1,493.075      | 10,108.30     | 3,900 mil        | 0.26%
+2021 | 1,829.186      | 12,425.00     | 4,000 mil        | 0.22%
+2022 | 2,291.612      | 15,619.60     | 5,600 mil        | 0.24%
+2023 | 2,071.505      | 14,159.40     | 6,800 mil        | 0.33%
+2024 | 2,173.835      | 14,889.00     | 7,600 mil        | 0.35%
+
+
+APPENDIX B: International Tourism Arrivals and Receipts per Arrival
+-------------------------------------------------------------------
+
+Table B1: Comparative Arrivals and Receipts (2018-2022)
+
+Country | Year | Arrivals (mil) | Receipts/Arrival (USD)
+--------|------|----------------|------------------------
+Croatia | 2018 | 16.6           | 669
+Croatia | 2019 | 17.4           | 677
+Croatia | 2020 | 5.5            | 991
+Croatia | 2021 | 10.6           | 1,012
+Croatia | 2022 | 15.3           | 887
+Russia  | 2018 | 24.6           | 472
+Russia  | 2019 | 24.6           | 446
+Russia  | 2020 | 6.4            | 615
+Russia  | 2021 | n/a            | n/a
+Russia  | 2022 | n/a            | n/a
+
+Note: World average receipts per arrival: 1,030 USD (2018), 1,014 USD (2019),
+      1,368 USD (2020), 1,421 USD (2021), 1,170 USD (2022)
+
+
+APPENDIX C: Employment in Tourism Sector
+----------------------------------------
+
+Table C1: Croatia Tourism Employment (thousands)
+
+Year | Employment
+-----|------------
+2015 | 90
+2016 | 93
+2017 | 92
+2018 | 103
+2019 | 115
+
+Table C2: Russia Tourism Employment (thousands)
+
+Year | Employment
+-----|------------
+2015 | 1,096
+2016 | 1,119
+2017 | 1,122
+2018 | 1,123
+2019 | 1,122
+
+
+================================================================================
+                              END OF DOCUMENT
+================================================================================

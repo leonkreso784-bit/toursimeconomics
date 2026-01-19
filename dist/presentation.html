@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomy Tourism Economics: Croatia vs Russia</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slides.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/charts.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ========== BASE RESPONSIVE STYLES ========== */
+        * { box-sizing: border-box; }
+        
+        /* Title slide */
+        .title-meta { margin-top: 2rem; }
+        .title-meta p { margin: 0.5rem 0; font-size: clamp(0.9rem, 2.5vw, 1.1rem); }
+        .title-meta .course-name { font-size: clamp(1rem, 3vw, 1.3rem); color: var(--gold); }
+        .title-meta .authors { font-size: clamp(1.2rem, 3.5vw, 1.5rem); font-weight: 600; }
+        .title-flags { margin-top: 2rem; font-size: clamp(2rem, 6vw, 3rem); }
+        .title-flags .flag-separator { margin: 0 0.5rem; color: var(--gold); font-size: clamp(1.5rem, 4vw, 2rem); vertical-align: middle; }
+        
+        /* Agenda */
+        .agenda-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; max-width: 900px; margin: 0 auto; }
+        .agenda-item { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; background: rgba(255,255,255,0.05); border-radius: 10px; border-left: 3px solid var(--gold); }
+        .agenda-icon { font-size: clamp(1.2rem, 3vw, 1.5rem); flex-shrink: 0; }
+        .agenda-text { font-size: clamp(0.85rem, 2vw, 1.1rem); }
+        
+        /* Comparison cards */
+        .comparison-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin: 1.5rem 0; width: 100%; max-width: 900px; }
+        .country-card { padding: 1.5rem; background: rgba(255,255,255,0.05); border-radius: 15px; text-align: left; }
+        .country-card.croatia { border-top: 4px solid #FF0000; }
+        .country-card.russia { border-top: 4px solid #0039A6; }
+        .country-card h3 { margin-bottom: 1rem; font-size: clamp(1.1rem, 3vw, 1.5rem); }
+        .country-card ul { list-style: none; padding: 0; margin: 0; }
+        .country-card li { padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: clamp(0.85rem, 2vw, 1rem); }
+        
+        .context-intro { margin-bottom: 1.5rem; font-size: clamp(1rem, 2.5vw, 1.2rem); opacity: 0.9; text-align: center; }
+        
+        .key-stat { margin-top: 1.5rem; text-align: center; }
+        .stat-highlight { font-size: clamp(2.5rem, 8vw, 4rem); font-weight: 700; color: var(--gold); display: block; }
+        .stat-label { font-size: clamp(0.9rem, 2.5vw, 1.2rem); color: rgba(255,255,255,0.8); }
+        
+        /* Objectives */
+        .objectives-list { max-width: 900px; margin: 0 auto; width: 100%; }
+        .objective { display: flex; align-items: flex-start; gap: 1rem; padding: 1rem; margin-bottom: 0.75rem; background: rgba(255,255,255,0.03); border-radius: 10px; text-align: left; }
+        .obj-icon { font-size: clamp(1.5rem, 4vw, 2rem); flex-shrink: 0; }
+        .obj-content h4 { margin: 0 0 0.3rem 0; color: var(--gold); font-size: clamp(0.95rem, 2.5vw, 1.1rem); }
+        .obj-content p { margin: 0; opacity: 0.9; font-size: clamp(0.85rem, 2vw, 1rem); }
+        
+        /* Theory grid */
+        .theory-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; max-width: 1000px; width: 100%; }
+        .theory-card { padding: 1rem; background: rgba(255,255,255,0.05); border-radius: 10px; text-align: left; }
+        .theory-icon { font-size: clamp(1.5rem, 4vw, 2rem); margin-bottom: 0.5rem; }
+        .theory-card h4 { color: var(--gold); margin: 0.5rem 0; font-size: clamp(0.9rem, 2.5vw, 1.05rem); }
+        .theory-card ul { padding-left: 1.2rem; margin: 0.5rem 0; font-size: clamp(0.8rem, 2vw, 0.95rem); }
+        .theory-note { font-size: clamp(0.75rem, 1.8vw, 0.85rem); opacity: 0.7; margin-top: 0.5rem; font-style: italic; }
+        
+        /* Methodology */
+        .method-container { max-width: 900px; text-align: left; width: 100%; }
+        .method-main { text-align: center; margin-bottom: 1.5rem; }
+        .method-main h3 { color: var(--gold); font-size: clamp(1.1rem, 3vw, 1.4rem); }
+        .method-main p { font-size: clamp(0.9rem, 2vw, 1rem); }
+        .method-sources { margin-bottom: 1.5rem; }
+        .method-sources h4 { color: var(--gold); margin-bottom: 0.75rem; font-size: clamp(0.95rem, 2.5vw, 1.1rem); }
+        .source-badges { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .badge { padding: 0.4rem 0.8rem; background: rgba(255,255,255,0.1); border-radius: 20px; font-size: clamp(0.75rem, 2vw, 0.9rem); }
+        .method-dimensions h4 { color: var(--gold); margin-bottom: 0.75rem; font-size: clamp(0.95rem, 2.5vw, 1.1rem); }
+        .dimension-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+        .dimension { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; background: rgba(255,255,255,0.05); border-radius: 8px; }
+        .dim-num { width: 28px; height: 28px; background: var(--gold); color: var(--bg-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0; }
+        .dimension span:last-child { font-size: clamp(0.8rem, 2vw, 0.95rem); }
+        
+        /* Global stats */
+        .global-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.5rem; width: 100%; max-width: 900px; }
+        .stat-card { padding: 1rem; background: rgba(255,255,255,0.05); border-radius: 10px; text-align: center; }
+        .stat-card.large { grid-column: span 2; }
+        .stat-value { display: block; font-size: clamp(1.5rem, 5vw, 2.5rem); font-weight: 700; color: var(--gold); }
+        .stat-desc { font-size: clamp(0.75rem, 2vw, 0.9rem); opacity: 0.8; }
+        
+        .global-trends { text-align: left; max-width: 800px; margin: 0 auto; width: 100%; }
+        .global-trends h4 { color: var(--gold); margin-bottom: 0.75rem; font-size: clamp(0.95rem, 2.5vw, 1.1rem); }
+        .trend { padding: 0.4rem 0; font-size: clamp(0.85rem, 2vw, 1rem); }
+        
+        /* Profile */
+        .profile-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; justify-content: center; }
+        .country-flag { font-size: clamp(2.5rem, 8vw, 4rem); }
+        .country-info h3 { margin: 0; font-size: clamp(1.3rem, 4vw, 2rem); }
+        .country-info p { margin: 0.3rem 0 0 0; opacity: 0.8; font-size: clamp(0.85rem, 2vw, 1rem); }
+        
+        .profile-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; max-width: 900px; width: 100%; }
+        .stat-box { padding: 1rem; background: rgba(255,255,255,0.05); border-radius: 10px; text-align: center; }
+        .stat-box .label { display: block; font-size: clamp(0.7rem, 2vw, 0.9rem); opacity: 0.7; margin-bottom: 0.3rem; }
+        .stat-box .value { display: block; font-size: clamp(1rem, 3vw, 1.5rem); font-weight: 600; }
+        .stat-box .note { display: block; font-size: clamp(0.65rem, 1.5vw, 0.8rem); opacity: 0.6; margin-top: 0.2rem; }
+        .stat-box.highlight { background: rgba(212, 175, 55, 0.1); border: 1px solid rgba(212, 175, 55, 0.3); }
+        .stat-box.highlight-main { background: rgba(212, 175, 55, 0.2); border: 2px solid var(--gold); }
+        .stat-box.highlight-main .value { color: var(--gold); font-size: clamp(1.2rem, 4vw, 2rem); }
+        
+        .profile-note { margin-top: 1rem; padding: 0.75rem; background: rgba(255,255,255,0.05); border-radius: 8px; font-size: clamp(0.85rem, 2vw, 1rem); }
+        
+        /* Gastronomy grid */
+        .gastro-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; max-width: 1000px; text-align: left; width: 100%; }
+        .gastro-main, .gastro-products, .gastro-achievements, .gastro-focus { padding: 1rem; background: rgba(255,255,255,0.03); border-radius: 10px; }
+        .gastro-challenge { grid-column: span 2; padding: 0.75rem; background: rgba(255, 193, 7, 0.1); border-radius: 8px; border-left: 3px solid #FFC107; }
+        .gastro-grid h4 { color: var(--gold); margin: 0 0 0.75rem 0; font-size: clamp(0.9rem, 2.5vw, 1.05rem); }
+        .regions, .product-list, .achievement-list { display: flex; flex-direction: column; gap: 0.3rem; }
+        .region, .product, .achievement-list span { padding: 0.3rem 0; font-size: clamp(0.8rem, 2vw, 0.95rem); }
+        .gastro-challenge p { margin: 0; font-size: clamp(0.85rem, 2vw, 1rem); }
+        
+        /* Data tables */
+        .data-container { max-width: 1000px; width: 100%; overflow-x: auto; }
+        .data-table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; min-width: 500px; }
+        .data-table th, .data-table td { padding: 0.6rem 0.5rem; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: clamp(0.75rem, 2vw, 0.95rem); }
+        .data-table th { background: rgba(255,255,255,0.05); color: var(--gold); white-space: nowrap; }
+        .data-table .positive { color: #4CAF50; font-weight: 600; }
+        .data-table .negative { color: #f44336; font-weight: 600; }
+        .data-table .neutral { color: #9E9E9E; }
+        
+        .chart-visual { margin: 1.5rem 0; }
+        .chart-visual h4 { color: var(--gold); margin-bottom: 0.75rem; font-size: clamp(0.9rem, 2.5vw, 1.05rem); text-align: center; }
+        .bar-chart { display: flex; align-items: flex-end; justify-content: center; gap: clamp(1rem, 4vw, 2rem); height: clamp(120px, 25vw, 200px); }
+        .bar { width: clamp(50px, 12vw, 80px); background: linear-gradient(to top, var(--gold), rgba(212, 175, 55, 0.5)); border-radius: 5px 5px 0 0; position: relative; height: calc(var(--height) * 1); transition: height 0.5s ease; }
+        .bar::after { content: attr(data-value); position: absolute; top: -22px; left: 50%; transform: translateX(-50%); font-size: clamp(0.7rem, 2vw, 0.9rem); font-weight: 600; white-space: nowrap; }
+        .bar::before { content: attr(data-label); position: absolute; bottom: -22px; left: 50%; transform: translateX(-50%); font-size: clamp(0.7rem, 2vw, 0.85rem); opacity: 0.8; }
+        
+        .data-insight { padding: 0.75rem; background: rgba(212, 175, 55, 0.1); border-radius: 8px; border-left: 3px solid var(--gold); font-size: clamp(0.85rem, 2vw, 1rem); }
+        
+        /* Comparison table */
+        .comparison-table-container { max-width: 900px; width: 100%; overflow-x: auto; }
+        .comparison-table { width: 100%; border-collapse: collapse; min-width: 450px; }
+        .comparison-table th, .comparison-table td { padding: 0.6rem 0.5rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: clamp(0.75rem, 2vw, 0.95rem); }
+        .comparison-table th { background: rgba(255,255,255,0.05); }
+        .comparison-table th.croatia { color: #FF0000; }
+        .comparison-table th.russia { color: #0039A6; }
+        .comparison-table .highlight-row { background: rgba(212, 175, 55, 0.1); }
+        .comparison-table .highlight { font-weight: 700; }
+        .comparison-table .highlight-cell { color: var(--gold); font-weight: 700; }
+        .comparison-table .mega-highlight { color: var(--gold); font-size: clamp(1rem, 3vw, 1.3rem); font-weight: 700; }
+        
+        .comparison-insight { margin-top: 1.5rem; }
+        .insight-box { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; background: rgba(255,255,255,0.05); border-radius: 10px; flex-wrap: wrap; justify-content: center; }
+        .insight-icon { font-size: clamp(1.2rem, 3vw, 1.5rem); }
+        .insight-text { font-size: clamp(0.9rem, 2.5vw, 1.1rem); }
+        
+        /* Models comparison */
+        .models-comparison { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 1000px; width: 100%; }
+        .model-card { padding: 1.25rem; background: rgba(255,255,255,0.03); border-radius: 15px; text-align: left; }
+        .croatia-model { border-top: 4px solid #FF0000; }
+        .russia-model { border-top: 4px solid #0039A6; }
+        .model-header { text-align: center; margin-bottom: 1rem; }
+        .model-flag { font-size: clamp(1.5rem, 4vw, 2rem); }
+        .model-header h3 { margin: 0.3rem 0; color: var(--gold); font-size: clamp(0.95rem, 2.5vw, 1.2rem); }
+        .model-subtitle { font-size: clamp(0.75rem, 2vw, 0.9rem); opacity: 0.8; }
+        .model-features { margin-bottom: 1rem; }
+        .feature { display: flex; align-items: center; gap: 0.5rem; padding: 0.35rem 0; font-size: clamp(0.8rem, 2vw, 0.95rem); }
+        .feature-icon { font-size: clamp(1rem, 2.5vw, 1.2rem); }
+        .model-risk { padding: 0.6rem; background: rgba(255, 193, 7, 0.1); border-radius: 5px; font-size: clamp(0.75rem, 2vw, 0.9rem); }
+        
+        /* Value chain */
+        .value-chain-container { max-width: 1000px; width: 100%; overflow-x: auto; }
+        .chain-table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; min-width: 400px; }
+        .chain-table th, .chain-table td { padding: 0.6rem 0.5rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: clamp(0.75rem, 2vw, 0.95rem); }
+        .chain-table th { background: rgba(255,255,255,0.05); }
+        .chain-table th.croatia { color: #FF0000; }
+        .chain-table th.russia { color: #0039A6; }
+        .stars { color: var(--gold); letter-spacing: 2px; }
+        
+        .chain-visual { margin: 1.5rem 0; text-align: center; }
+        .chain-visual h4 { color: var(--gold); margin-bottom: 0.75rem; font-size: clamp(0.9rem, 2.5vw, 1.05rem); }
+        .chain-diagram { display: flex; align-items: center; justify-content: center; gap: 0.5rem; flex-wrap: wrap; }
+        .chain-step { padding: 0.6rem 1rem; background: rgba(255,255,255,0.05); border-radius: 8px; font-size: clamp(0.8rem, 2vw, 0.95rem); }
+        .chain-arrow { font-size: clamp(1rem, 3vw, 1.5rem); color: var(--gold); }
+        
+        .chain-insight { padding: 0.75rem; background: rgba(212, 175, 55, 0.1); border-radius: 8px; border-left: 3px solid var(--gold); font-size: clamp(0.85rem, 2vw, 1rem); }
+        
+        /* SWOT */
+        .swot-dual { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 1100px; width: 100%; }
+        .swot-country { text-align: left; }
+        .swot-country h3 { text-align: center; margin-bottom: 0.75rem; font-size: clamp(1.1rem, 3vw, 1.5rem); }
+        .swot-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+        .swot-box { padding: 0.6rem; border-radius: 8px; }
+        .swot-box h4 { margin: 0 0 0.3rem 0; font-size: clamp(0.75rem, 2vw, 0.9rem); }
+        .swot-box ul { margin: 0; padding-left: 1rem; font-size: clamp(0.7rem, 1.8vw, 0.85rem); }
+        .swot-box li { margin: 0.2rem 0; }
+        .strengths { background: rgba(76, 175, 80, 0.15); border: 1px solid rgba(76, 175, 80, 0.3); }
+        .strengths h4 { color: #4CAF50; }
+        .weaknesses { background: rgba(244, 67, 54, 0.15); border: 1px solid rgba(244, 67, 54, 0.3); }
+        .weaknesses h4 { color: #f44336; }
+        .opportunities { background: rgba(33, 150, 243, 0.15); border: 1px solid rgba(33, 150, 243, 0.3); }
+        .opportunities h4 { color: #2196F3; }
+        .threats { background: rgba(255, 152, 0, 0.15); border: 1px solid rgba(255, 152, 0, 0.3); }
+        .threats h4 { color: #FF9800; }
+        
+        /* Recommendations */
+        .recommendations-container { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 1100px; text-align: left; width: 100%; }
+        .rec-column h3 { text-align: center; margin-bottom: 1rem; font-size: clamp(1.1rem, 3vw, 1.3rem); }
+        .rec-list { display: flex; flex-direction: column; gap: 0.75rem; }
+        .rec-item { display: flex; gap: 0.75rem; padding: 0.75rem; background: rgba(255,255,255,0.03); border-radius: 8px; }
+        .rec-num { width: 26px; height: 26px; background: var(--gold); color: var(--bg-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; font-size: 0.9rem; }
+        .rec-content strong { display: block; margin-bottom: 0.2rem; font-size: clamp(0.85rem, 2vw, 1rem); }
+        .rec-content p { margin: 0; font-size: clamp(0.75rem, 1.8vw, 0.9rem); opacity: 0.8; }
+        
+        /* Conclusions */
+        .conclusions-container { max-width: 900px; width: 100%; }
+        .conclusion-item { display: flex; gap: 1rem; margin-bottom: 1rem; padding: 1rem; background: rgba(255,255,255,0.03); border-radius: 10px; text-align: left; }
+        .conclusion-num { width: 36px; height: 36px; background: var(--gold); color: var(--bg-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: clamp(1rem, 3vw, 1.3rem); font-weight: 700; flex-shrink: 0; }
+        .conclusion-content h4 { margin: 0 0 0.3rem 0; color: var(--gold); font-size: clamp(0.9rem, 2.5vw, 1.05rem); }
+        .conclusion-content p { margin: 0; opacity: 0.9; font-size: clamp(0.85rem, 2vw, 1rem); }
+        
+        .final-insight { margin-top: 1.5rem; display: flex; align-items: center; justify-content: center; gap: 0.75rem; padding: 1rem; background: rgba(212, 175, 55, 0.1); border-radius: 10px; border: 1px solid rgba(212, 175, 55, 0.3); flex-wrap: wrap; text-align: center; }
+        .final-insight .insight-icon { font-size: clamp(1.5rem, 4vw, 2rem); }
+        .final-insight .insight-text { font-size: clamp(0.9rem, 2.5vw, 1.1rem); }
+        
+        /* Thank you */
+        .thank-you-content { text-align: center; }
+        .authors-info { margin-bottom: 1.5rem; }
+        .authors-info h3 { color: var(--gold); margin-bottom: 0.3rem; font-size: clamp(1rem, 3vw, 1.2rem); }
+        .author-names { font-size: clamp(1.2rem, 3.5vw, 1.5rem); font-weight: 600; }
+        .course-info p { margin: 0.4rem 0; font-size: clamp(0.85rem, 2vw, 1rem); }
+        .closing-flags { margin-top: 1.5rem; font-size: clamp(2rem, 6vw, 3rem); }
+        .closing-flags .separator { margin: 0 0.5rem; color: var(--gold); font-size: clamp(1.5rem, 4vw, 2rem); vertical-align: middle; }
+        
+        /* ========== TABLET RESPONSIVE (max-width: 900px) ========== */
+        @media (max-width: 900px) {
+            .agenda-grid { grid-template-columns: 1fr; gap: 0.75rem; }
+            .comparison-cards { grid-template-columns: 1fr; gap: 1rem; }
+            .theory-grid { grid-template-columns: 1fr; gap: 0.75rem; }
+            .global-stats { grid-template-columns: repeat(2, 1fr); }
+            .stat-card.large { grid-column: span 2; }
+            .profile-stats { grid-template-columns: repeat(2, 1fr); }
+            .gastro-grid { grid-template-columns: 1fr; }
+            .gastro-challenge { grid-column: span 1; }
+            .models-comparison { grid-template-columns: 1fr; gap: 1rem; }
+            .swot-dual { grid-template-columns: 1fr; gap: 1.5rem; }
+            .recommendations-container { grid-template-columns: 1fr; gap: 1.5rem; }
+            .dimension-grid { grid-template-columns: 1fr; }
+        }
+        
+        /* ========== MOBILE RESPONSIVE (max-width: 600px) ========== */
+        @media (max-width: 600px) {
+            .slide-content { padding: 0 0.5rem; }
+            
+            .agenda-item { padding: 0.6rem 0.75rem; }
+            
+            .country-card { padding: 1rem; }
+            
+            .objective { flex-direction: column; gap: 0.5rem; padding: 0.75rem; }
+            .obj-icon { align-self: flex-start; }
+            
+            .global-stats { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+            .stat-card { padding: 0.75rem 0.5rem; }
+            .stat-card.large { grid-column: span 2; }
+            
+            .profile-header { flex-direction: column; text-align: center; }
+            .profile-stats { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+            .stat-box { padding: 0.75rem 0.5rem; }
+            
+            .bar-chart { gap: 0.75rem; height: 100px; }
+            .bar { width: 45px; }
+            .bar::after { font-size: 0.65rem; top: -18px; }
+            .bar::before { font-size: 0.65rem; bottom: -18px; }
+            
+            .model-card { padding: 1rem; }
+            
+            .swot-grid { grid-template-columns: 1fr; gap: 0.5rem; }
+            .swot-box { padding: 0.5rem; }
+            
+            .chain-diagram { gap: 0.3rem; }
+            .chain-step { padding: 0.5rem 0.75rem; font-size: 0.75rem; }
+            .chain-arrow { font-size: 1rem; }
+            
+            .conclusion-item { flex-direction: column; gap: 0.5rem; }
+            .conclusion-num { align-self: flex-start; }
+            
+            .rec-item { flex-direction: column; gap: 0.5rem; }
+            .rec-num { align-self: flex-start; }
+            
+            .insight-box { flex-direction: column; text-align: center; }
+            .final-insight { flex-direction: column; }
+        }
+        
+        /* ========== VERY SMALL SCREENS (max-width: 400px) ========== */
+        @media (max-width: 400px) {
+            .profile-stats { grid-template-columns: 1fr; }
+            .global-stats { grid-template-columns: 1fr; }
+            .stat-card.large { grid-column: span 1; }
+            
+            .bar-chart { height: 80px; gap: 0.5rem; }
+            .bar { width: 35px; }
+        }
+        
+        /* ========== LANDSCAPE PHONES ========== */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .slide { padding: 0.5rem 1rem; min-height: calc(100vh - 90px); }
+            .slide-title { font-size: 1.5rem !important; margin-bottom: 0.5rem; }
+            .slide-subtitle { font-size: 1rem !important; }
+            
+            .profile-stats { grid-template-columns: repeat(3, 1fr); }
+            .stat-box { padding: 0.5rem; }
+            .stat-box .value { font-size: 1rem; }
+            
+            .comparison-cards { gap: 0.75rem; }
+            .country-card { padding: 0.75rem; }
+            
+            .bar-chart { height: 80px; }
+        }
+        
+        /* ========== PRINT STYLES ========== */
+        @media print {
+            .main-nav, .sidebar, .progress-bar, .presentation-footer { display: none !important; }
+            .slide { display: block !important; page-break-after: always; min-height: auto; padding: 1cm; }
+            .slide.active { display: block !important; }
+            body { background: white; color: black; }
+        }
+
+        /* ========== EXPLANATION MODAL ========== */
+        .explanation-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(5px);
+            z-index: 10000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .explanation-modal.active {
+            display: flex;
+            opacity: 1;
+        }
+        
+        .modal-content {
+            background: linear-gradient(145deg, #1a252f, #2c3e50);
+            border-radius: 20px;
+            max-width: 700px;
+            width: 100%;
+            max-height: 85vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(212, 175, 55, 0.2);
+            animation: modalSlideIn 0.3s ease;
+        }
+        
+        @keyframes modalSlideIn {
+            from {
+                transform: translateY(-30px) scale(0.95);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .modal-header {
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .modal-header h3 {
+            margin: 0;
+            color: var(--gold, #D4AF37);
+            font-size: clamp(1.1rem, 3vw, 1.4rem);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .modal-header .modal-icon {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+        }
+        
+        .modal-close {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-close:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: rotate(90deg);
+        }
+        
+        .modal-body {
+            padding: 2rem;
+        }
+        
+        .modal-body p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        .modal-body p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .modal-body strong {
+            color: var(--gold, #D4AF37);
+        }
+        
+        .modal-body ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        .modal-body li {
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 0.5rem;
+            font-size: clamp(0.9rem, 2.2vw, 1rem);
+        }
+        
+        .modal-tip {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: rgba(212, 175, 55, 0.15);
+            border-left: 3px solid var(--gold, #D4AF37);
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .modal-tip p {
+            margin: 0;
+            font-size: clamp(0.85rem, 2vw, 0.95rem);
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        /* Clickable boxes styling */
+        .clickable-box {
+            cursor: pointer;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+        
+        .clickable-box::after {
+            content: 'ℹ️';
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 0.75rem;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+        
+        .clickable-box:hover::after {
+            opacity: 0.7;
+        }
+        
+        .clickable-box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.2);
+        }
+        
+        .clickable-box:active {
+            transform: translateY(0);
+        }
+
+        /* Mobile modal adjustments */
+        @media (max-width: 600px) {
+            .explanation-modal {
+                padding: 0.5rem;
+            }
+            
+            .modal-content {
+                max-height: 90vh;
+                border-radius: 15px;
+            }
+            
+            .modal-header {
+                padding: 1rem 1.25rem;
+            }
+            
+            .modal-body {
+                padding: 1.25rem;
+            }
+            
+            .modal-close {
+                width: 36px;
+                height: 36px;
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p>Loading Presentation...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="main-nav">
+        <div class="nav-logo">
+            <span class="logo-icon">🍽️</span>
+            <span class="logo-text">Gastro Tourism</span>
+        </div>
+        <div class="nav-controls">
+            <button id="prev-btn" class="nav-btn" title="Previous Slide">
+                <span>←</span>
+            </button>
+            <span id="slide-counter" class="slide-counter">1 / 20</span>
+            <button id="next-btn" class="nav-btn" title="Next Slide">
+                <span>→</span>
+            </button>
+        </div>
+        <div class="nav-menu">
+            <button id="menu-toggle" class="menu-toggle" title="Menu">
+                <span class="menu-icon">☰</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Sidebar Menu -->
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>Sadržaj</h3>
+            <button id="sidebar-close" class="sidebar-close">×</button>
+        </div>
+        <ul id="slide-menu" class="slide-menu">
+            <!-- Populated by JavaScript -->
+        </ul>
+    </aside>
+
+    <!-- Main Presentation Container -->
+    <main id="presentation" class="presentation">
+        
+        <!-- SLIDE 1: TITLE -->
+        <section class="slide slide--title slide--gradient-primary active" data-slide-index="0">
+            <div class="slide-content">
+                <h1 class="slide-title">Gastronomy Tourism Economics</h1>
+                <h2 class="slide-subtitle">A Comparative Analysis of Croatia and Russia</h2>
+                <div class="title-meta">
+                    <p class="course-name">Economics in Tourism</p>
+                    <p class="authors">Leon Kreso & Sofia Butkovskaia</p>
+                    <p class="institution">Faculty of Tourism and Hospitality Management, Opatija</p>
+                    <p class="date">November 2025</p>
+                </div>
+                <div class="title-flags">
+                    <span class="flag flag-croatia">🇭🇷</span>
+                    <span class="flag-separator">vs</span>
+                    <span class="flag flag-russia">🇷🇺</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 2: AGENDA -->
+        <section class="slide slide--content slide--dark" data-slide-index="1">
+            <div class="slide-content">
+                <h2 class="slide-title">Presentation Outline</h2>
+                <div class="agenda-grid">
+                    <div class="agenda-item" data-title="Introduction" data-icon="📋" data-explanation="<p><strong>Introduction & Research Objectives</strong> sets the foundation for our comparative study.</p><p>We examine why gastronomy tourism is economically significant and establish clear research questions about how different countries leverage food culture for economic benefit.</p><div class='modal-tip'><p>💡 The introduction frames gastronomy not just as cultural heritage, but as a <strong>strategic economic asset</strong> that can drive GDP growth.</p></div>"><span class="agenda-icon">📋</span><span class="agenda-text">Introduction & Research Objectives</span></div>
+                    <div class="agenda-item" data-title="Theoretical Framework" data-icon="📚" data-explanation="<p><strong>Theoretical Framework</strong> provides the academic foundation for our analysis.</p><p>We use established economic theories including:</p><ul><li><strong>Tourism Multiplier Effects</strong> - How tourism spending ripples through the economy</li><li><strong>Value Chain Theory</strong> - Connections between agriculture, processing, and hospitality</li><li><strong>Destination Competitiveness</strong> - Factors that make destinations successful</li></ul><div class='modal-tip'><p>💡 These frameworks help us compare Croatia and Russia using consistent, measurable criteria.</p></div>"><span class="agenda-icon">📚</span><span class="agenda-text">Theoretical Framework</span></div>
+                    <div class="agenda-item" data-title="Methodology" data-icon="🔬" data-explanation="<p><strong>Methodology</strong> explains our research approach.</p><p>We employ a <strong>comparative case study methodology</strong> analyzing secondary data from authoritative sources like UN Tourism, World Bank, and WTTC.</p><p>Our analysis covers 2015-2024 to capture both pre-pandemic trends and post-COVID recovery patterns.</p><div class='modal-tip'><p>💡 Using official statistics ensures our findings are verifiable and academically rigorous.</p></div>"><span class="agenda-icon">🔬</span><span class="agenda-text">Methodology</span></div>
+                    <div class="agenda-item" data-title="Croatia Analysis" data-icon="🇭🇷" data-explanation="<p><strong>Croatia: Economic Analysis</strong> examines how a small Mediterranean nation built a tourism-dependent economy.</p><p>Key topics include:</p><ul><li>Tourism's 17.5% contribution to GDP</li><li>Mediterranean cuisine as international brand</li><li>Wine, olive oil, and truffle exports</li><li>Seasonality challenges</li></ul><div class='modal-tip'><p>💡 Croatia demonstrates the 'export model' - using gastronomy to attract international visitors.</p></div>"><span class="agenda-icon">🇭🇷</span><span class="agenda-text">Croatia: Economic Analysis</span></div>
+                    <div class="agenda-item" data-title="Russia Analysis" data-icon="🇷🇺" data-explanation="<p><strong>Russia: Economic Analysis</strong> explores how the world's largest country approaches gastronomy tourism differently.</p><p>Key topics include:</p><ul><li>Tourism's 0.35% contribution to GDP</li><li>Domestic market focus (146 million people)</li><li>Regional culinary diversity</li><li>Infrastructure challenges</li></ul><div class='modal-tip'><p>💡 Russia demonstrates the 'domestic model' - using gastronomy for regional development rather than exports.</p></div>"><span class="agenda-icon">🇷🇺</span><span class="agenda-text">Russia: Economic Analysis</span></div>
+                    <div class="agenda-item" data-title="Comparative Analysis" data-icon="⚖️" data-explanation="<p><strong>Comparative Analysis</strong> directly contrasts the two countries' approaches.</p><p>We analyze the <strong>50× difference</strong> in tourism's GDP contribution and explain why both models can be successful within their respective contexts.</p><div class='modal-tip'><p>💡 The comparison reveals that there's no 'one size fits all' approach to gastronomy tourism development.</p></div>"><span class="agenda-icon">⚖️</span><span class="agenda-text">Comparative Analysis</span></div>
+                    <div class="agenda-item" data-title="Strategic Implications" data-icon="💡" data-explanation="<p><strong>Strategic Implications</strong> translates our findings into actionable insights.</p><p>We examine SWOT analyses for both countries and discuss how each can learn from the other's approach.</p><div class='modal-tip'><p>💡 Even very different economies can borrow elements from each other's strategies.</p></div>"><span class="agenda-icon">💡</span><span class="agenda-text">Strategic Implications</span></div>
+                    <div class="agenda-item" data-title="Conclusions" data-icon="🎯" data-explanation="<p><strong>Conclusions & Recommendations</strong> synthesizes our findings into clear takeaways.</p><p>We provide specific policy recommendations for both Croatia and Russia, backed by our economic analysis.</p><div class='modal-tip'><p>💡 Effective strategy must align with each country's broader economic structure and development goals.</p></div>"><span class="agenda-icon">🎯</span><span class="agenda-text">Conclusions & Recommendations</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 3: RESEARCH CONTEXT -->
+        <section class="slide slide--comparison slide--dark" data-slide-index="2">
+            <div class="slide-content">
+                <h2 class="slide-title">Why Compare Croatia and Russia?</h2>
+                <p class="context-intro">Two fundamentally different economic models for gastronomy tourism development</p>
+                <div class="comparison-cards">
+                    <div class="country-card croatia" data-title="Croatia Overview" data-icon="🇭🇷" data-explanation="<p><strong>Croatia</strong> represents the <strong>small, tourism-dependent economy model</strong>.</p><p>Key characteristics:</p><ul><li><strong>Population:</strong> 3.9 million (smaller than most major cities)</li><li><strong>GDP:</strong> $92.5 billion</li><li><strong>Tourism dependency:</strong> 17.5% of GDP - one of Europe's highest</li><li><strong>Strategy:</strong> International visitor focus, premium Mediterranean positioning</li></ul><p>Croatia has successfully leveraged its coastal location, Mediterranean cuisine, and EU membership to become a world-class tourism destination.</p><div class='modal-tip'><p>💡 Croatia earns more tourism revenue than Russia despite being 37× smaller in population!</p></div>">
+                        <h3>🇭🇷 Croatia</h3>
+                        <ul>
+                            <li>Tourism-dependent economy</li>
+                            <li><strong>17.5% of GDP</strong> from tourism</li>
+                            <li>International market focus</li>
+                            <li>Mediterranean destination</li>
+                        </ul>
+                    </div>
+                    <div class="country-card russia" data-title="Russia Overview" data-icon="🇷🇺" data-explanation="<p><strong>Russia</strong> represents the <strong>large, diversified economy model</strong>.</p><p>Key characteristics:</p><ul><li><strong>Population:</strong> 146 million across 11 time zones</li><li><strong>GDP:</strong> $2,174 billion (23.5× Croatia)</li><li><strong>Tourism dependency:</strong> 0.35% of GDP - marginal in national economy</li><li><strong>Strategy:</strong> Domestic tourism focus, regional development tool</li></ul><p>Russia's vast size and diversified economy means tourism serves different purposes than in Croatia.</p><div class='modal-tip'><p>💡 Despite low tourism GDP%, Russia employs 1.12 million in tourism - nearly 10× more than Croatia!</p></div>">
+                        <h3>🇷🇺 Russia</h3>
+                        <ul>
+                            <li>Diversified economy</li>
+                            <li><strong>&lt;0.5% of GDP</strong> from tourism</li>
+                            <li>Domestic market focus</li>
+                            <li>Continental destination</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="key-stat">
+                    <span class="stat-highlight">50×</span>
+                    <span class="stat-label">difference in relative tourism contribution to GDP</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: RESEARCH OBJECTIVES -->
+        <section class="slide slide--content slide--dark" data-slide-index="3">
+            <div class="slide-content">
+                <h2 class="slide-title">Research Objectives</h2>
+                <div class="objectives-list">
+                    <div class="objective" data-title="Economic Contribution" data-icon="📊" data-explanation="<p><strong>Economic Contribution Analysis</strong> is our primary research objective.</p><p>We examine how gastronomy tourism contributes to:</p><ul><li><strong>National GDP</strong> - Direct revenue from food tourism</li><li><strong>Employment</strong> - Jobs in restaurants, agriculture, processing</li><li><strong>Regional development</strong> - How tourism benefits rural areas</li></ul><p>This analysis uses official statistics from World Bank, WTTC, and national bureaus to quantify gastronomy's economic impact.</p><div class='modal-tip'><p>💡 Measuring economic contribution helps policymakers justify investment in gastronomy tourism development.</p></div>">
+                        <div class="obj-icon">📊</div>
+                        <div class="obj-content">
+                            <h4>Economic Contribution Analysis</h4>
+                            <p>Analyze gastronomy tourism's contribution to national GDP, employment, and regional development</p>
+                        </div>
+                    </div>
+                    <div class="objective" data-title="Role Assessment" data-icon="🎯" data-explanation="<p><strong>Role Assessment</strong> examines how gastronomy functions within each country's tourism strategy.</p><p>Key questions:</p><ul><li>Is gastronomy a <strong>primary tourism driver</strong> (Croatia model)?</li><li>Or a <strong>cultural asset</strong> for domestic visitors (Russia model)?</li><li>How does this role affect investment priorities?</li></ul><p>Understanding the strategic role helps explain why the same product (food tourism) can serve very different purposes.</p><div class='modal-tip'><p>💡 Croatia uses gastronomy to attract foreign spending; Russia uses it for regional self-sufficiency.</p></div>">
+                        <div class="obj-icon">🎯</div>
+                        <div class="obj-content">
+                            <h4>Role Assessment</h4>
+                            <p>Compare gastronomy's function as tourism driver (Croatia) vs cultural asset (Russia)</p>
+                        </div>
+                    </div>
+                    <div class="objective" data-title="Value Chain Evaluation" data-icon="🔗" data-explanation="<p><strong>Value Chain Evaluation</strong> analyzes the connections between economic sectors.</p><p>The gastronomy tourism value chain includes:</p><ul><li><strong>Agriculture</strong> - Raw material production</li><li><strong>Food Processing</strong> - Value-added manufacturing</li><li><strong>Hospitality</strong> - Restaurants, hotels</li><li><strong>Tourism</strong> - Marketing, experiences</li></ul><p>Stronger integration = higher economic multipliers (2.0-2.5× vs 1.2-1.5×).</p><div class='modal-tip'><p>💡 Croatia's tight value chain means every tourist euro spent creates €2.50 in economic activity.</p></div>">
+                        <div class="obj-icon">🔗</div>
+                        <div class="obj-content">
+                            <h4>Value Chain Evaluation</h4>
+                            <p>Evaluate integration between agriculture, food processing, and tourism sectors</p>
+                        </div>
+                    </div>
+                    <div class="objective" data-title="Branding Effectiveness" data-icon="🏆" data-explanation="<p><strong>Branding Effectiveness</strong> assesses international market positioning.</p><p>Key elements analyzed:</p><ul><li><strong>Product certifications</strong> - PDO/PGI designations</li><li><strong>International recognition</strong> - Michelin stars, awards</li><li><strong>Export performance</strong> - Wine, olive oil, specialty foods</li><li><strong>Destination image</strong> - Association with quality cuisine</li></ul><p>Strong branding enables premium pricing and attracts high-spending tourists.</p><div class='modal-tip'><p>💡 Croatia has 10 Michelin-starred restaurants and 140+ Gault Millau listings - powerful branding tools.</p></div>">
+                        <div class="obj-icon">🏆</div>
+                        <div class="obj-content">
+                            <h4>Branding Effectiveness</h4>
+                            <p>Assess gastronomy branding and international market positioning strategies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 5: THEORETICAL FRAMEWORK -->
+        <section class="slide slide--content slide--dark" data-slide-index="4">
+            <div class="slide-content">
+                <h2 class="slide-title">Economic Framework for Gastronomy Tourism</h2>
+                <div class="theory-grid">
+                    <div class="theory-card" data-title="Tourism Multiplier Effects" data-icon="💰" data-explanation="<p><strong>Tourism Multiplier Effects</strong> explain how initial tourist spending creates wider economic impact.</p><p><strong>Three types of effects:</strong></p><ul><li><strong>Direct effects:</strong> Tourist spends €100 at restaurant → Restaurant receives €100</li><li><strong>Indirect effects:</strong> Restaurant buys €50 from local farmers → Suppliers benefit</li><li><strong>Induced effects:</strong> Restaurant staff spend wages locally → More economic activity</li></ul><p><strong>Typical multipliers:</strong></p><ul><li>Croatia: 2.0-2.5× (strong local integration)</li><li>Russia: 1.2-1.5× (weaker integration)</li></ul><div class='modal-tip'><p>💡 A multiplier of 2.5× means every €1 of tourist spending generates €2.50 in total economic activity!</p></div>">
+                        <div class="theory-icon">💰</div>
+                        <h4>Tourism Multiplier Effects</h4>
+                        <ul>
+                            <li><strong>Direct:</strong> Restaurant, hotel spending</li>
+                            <li><strong>Indirect:</strong> Supplier purchases</li>
+                            <li><strong>Induced:</strong> Employee spending</li>
+                        </ul>
+                        <div class="theory-note">Typical multiplier: 1.5-2.5×</div>
+                    </div>
+                    <div class="theory-card" data-title="Value Chain Theory" data-icon="🔗" data-explanation="<p><strong>Value Chain Theory</strong> (based on Michael Porter's work) analyzes how value is created through connected activities.</p><p><strong>Gastronomy Tourism Value Chain:</strong></p><ul><li><strong>Agriculture:</strong> Growing grapes, olives, raising livestock</li><li><strong>Processing:</strong> Wine-making, olive oil pressing, curing meats</li><li><strong>Hospitality:</strong> Restaurants, hotels, cooking schools</li><li><strong>Tourism:</strong> Food tours, festivals, destination marketing</li></ul><p><strong>Key insight:</strong> Countries with tighter integration between these stages capture more economic value. Croatia sources 60-70% locally; Russia only ~30%.</p><div class='modal-tip'><p>💡 When tourists buy local wine, they support the entire chain from farmer to restaurant!</p></div>">
+                        <div class="theory-icon">🔗</div>
+                        <h4>Value Chain Theory</h4>
+                        <ul>
+                            <li>Agriculture → Processing</li>
+                            <li>Processing → Hospitality</li>
+                            <li>Hospitality → Tourism</li>
+                        </ul>
+                        <div class="theory-note">Higher integration = Higher multipliers</div>
+                    </div>
+                    <div class="theory-card" data-title="Destination Competitiveness" data-icon="🏆" data-explanation="<p><strong>Destination Competitiveness Theory</strong> (Ritchie & Crouch model) identifies factors that make tourism destinations successful.</p><p><strong>Three resource categories:</strong></p><ul><li><strong>Inherited resources:</strong> Natural beauty, climate, traditional cuisines - Croatia's Mediterranean setting, Russia's diverse landscapes</li><li><strong>Created resources:</strong> Infrastructure, brands, certifications - Michelin stars, PDO products, wine routes</li><li><strong>Supporting factors:</strong> Policy environment, governance, investment climate</li></ul><p>Success requires both inherited AND created advantages.</p><div class='modal-tip'><p>💡 Croatia has strong inherited (coast) + created (EU standards) resources. Russia has inherited (diversity) but developing created resources.</p></div>">
+                        <div class="theory-icon">🏆</div>
+                        <h4>Destination Competitiveness</h4>
+                        <ul>
+                            <li><strong>Inherited:</strong> Natural resources</li>
+                            <li><strong>Created:</strong> Infrastructure, branding</li>
+                            <li><strong>Supporting:</strong> Policy, governance</li>
+                        </ul>
+                        <div class="theory-note">Porter & Ritchie-Crouch models</div>
+                    </div>
+                    <div class="theory-card" data-title="Economic Dimensions" data-icon="📈" data-explanation="<p><strong>Economic Dimensions</strong> are the measurable outcomes we use to assess gastronomy tourism impact.</p><p><strong>Key metrics from WTTC methodology:</strong></p><ul><li><strong>GDP contribution:</strong> Direct and total tourism revenue as % of GDP</li><li><strong>Employment:</strong> Jobs directly and indirectly supported by tourism</li><li><strong>Regional development:</strong> How tourism benefits specific areas</li><li><strong>Foreign exchange:</strong> International tourism receipts</li></ul><p>These metrics allow standardized comparison between very different countries.</p><div class='modal-tip'><p>💡 WTTC methodology is used worldwide, making our Croatia-Russia comparison academically valid.</p></div>">
+                        <div class="theory-icon">📈</div>
+                        <h4>Economic Dimensions</h4>
+                        <ul>
+                            <li>GDP contribution</li>
+                            <li>Employment generation</li>
+                            <li>Regional development</li>
+                        </ul>
+                        <div class="theory-note">WTTC methodology</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 6: METHODOLOGY -->
+        <section class="slide slide--content slide--dark" data-slide-index="5">
+            <div class="slide-content">
+                <h2 class="slide-title">Analytical Approach</h2>
+                <div class="method-container">
+                    <div class="method-main">
+                        <h3>Comparative Case Study Methodology</h3>
+                        <p>Secondary data analysis spanning 2015-2024</p>
+                    </div>
+                    <div class="method-sources">
+                        <h4>Data Sources</h4>
+                        <div class="source-badges">
+                            <span class="badge" data-title="UN Tourism" data-icon="🌐" data-explanation="<p><strong>UN Tourism</strong> (formerly UNWTO) is the leading international organization for tourism.</p><p>Data provided includes:</p><ul><li>International tourist arrivals by country</li><li>Tourism receipts and expenditure</li><li>Global tourism trends and forecasts</li></ul><div class='modal-tip'><p>💡 UN Tourism data is the gold standard for international tourism statistics.</p></div>">UN Tourism</span>
+                            <span class="badge" data-title="World Bank" data-icon="🏦" data-explanation="<p><strong>World Bank</strong> provides comprehensive economic data for all countries.</p><p>Data used includes:</p><ul><li>GDP figures (total and per capita)</li><li>Population statistics</li><li>Economic development indicators</li><li>Tourism as % of GDP calculations</li></ul><div class='modal-tip'><p>💡 World Bank data ensures our economic comparisons use consistent methodologies.</p></div>">World Bank</span>
+                            <span class="badge" data-title="WTTC" data-icon="✈️" data-explanation="<p><strong>World Travel & Tourism Council (WTTC)</strong> is the global authority on tourism's economic impact.</p><p>WTTC methodology provides:</p><ul><li>Direct, indirect, and induced economic effects</li><li>Employment statistics (direct and total)</li><li>Investment data</li><li>Forecasts and projections</li></ul><div class='modal-tip'><p>💡 WTTC methodology is used by governments worldwide for tourism planning.</p></div>">WTTC</span>
+                            <span class="badge" data-title="Eurostat" data-icon="🇪🇺" data-explanation="<p><strong>Eurostat</strong> is the EU's statistical office providing harmonized data for European countries.</p><p>Data includes:</p><ul><li>Tourism statistics for Croatia and EU</li><li>Agricultural production data</li><li>PDO/PGI product registrations</li><li>Regional development indicators</li></ul><div class='modal-tip'><p>💡 Eurostat data allows us to benchmark Croatia against EU standards.</p></div>">Eurostat</span>
+                            <span class="badge" data-title="Croatian Bureau of Statistics" data-icon="🇭🇷" data-explanation="<p><strong>Croatian Bureau of Statistics (DZS)</strong> provides official national statistics for Croatia.</p><p>Data includes:</p><ul><li>Detailed tourism arrivals and nights</li><li>Regional tourism breakdown</li><li>Hospitality sector employment</li><li>Agricultural production</li></ul><div class='modal-tip'><p>💡 National statistics provide granular detail not available in international databases.</p></div>">Croatian Bureau of Statistics</span>
+                            <span class="badge" data-title="Rosstat" data-icon="🇷🇺" data-explanation="<p><strong>Rosstat</strong> (Russian Federal State Statistics Service) provides official data for Russia.</p><p>Data includes:</p><ul><li>Domestic and international tourism</li><li>Regional economic indicators</li><li>Hospitality sector statistics</li><li>Agricultural production by region</li></ul><div class='modal-tip'><p>💡 Rosstat data reveals Russia's domestic tourism growth, often overlooked in international analyses.</p></div>">Rosstat</span>
+                        </div>
+                    </div>
+                    <div class="method-dimensions">
+                        <h4>Four-Dimensional Analysis</h4>
+                        <div class="dimension-grid">
+                            <div class="dimension" data-title="Economic Contribution" data-icon="💵" data-explanation="<p><strong>Dimension 1: Economic Contribution</strong></p><p>Measures how gastronomy tourism contributes to national economies:</p><ul><li>GDP contribution (direct and total)</li><li>Tourism receipts in absolute terms</li><li>Revenue growth over time</li></ul><p>This dimension answers: 'How much money does food tourism generate?'</p>"><span class="dim-num">1</span><span>Economic Contribution</span></div>
+                            <div class="dimension" data-title="Value Chain Integration" data-icon="🔗" data-explanation="<p><strong>Dimension 2: Value Chain Integration</strong></p><p>Analyzes connections between economic sectors:</p><ul><li>Agriculture-tourism linkages</li><li>Local sourcing rates</li><li>Quality certifications (PDO/PGI)</li></ul><p>This dimension answers: 'How well does tourism connect with local production?'</p>"><span class="dim-num">2</span><span>Value Chain Integration</span></div>
+                            <div class="dimension" data-title="Market Positioning" data-icon="🎯" data-explanation="<p><strong>Dimension 3: Market Positioning</strong></p><p>Assesses international branding and target markets:</p><ul><li>Domestic vs. international focus</li><li>Premium vs. mass market positioning</li><li>Brand recognition and awards</li></ul><p>This dimension answers: 'Who are the target customers and how is the destination positioned?'</p>"><span class="dim-num">3</span><span>Market Positioning</span></div>
+                            <div class="dimension" data-title="Development Context" data-icon="🌍" data-explanation="<p><strong>Dimension 4: Development Context</strong></p><p>Considers the broader economic environment:</p><ul><li>Overall economic structure</li><li>Tourism's role in development strategy</li><li>Regional policy priorities</li></ul><p>This dimension answers: 'Why does each country approach gastronomy tourism differently?'</p>"><span class="dim-num">4</span><span>Development Context</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 7: GLOBAL CONTEXT -->
+        <section class="slide slide--stats slide--dark" data-slide-index="6">
+            <div class="slide-content">
+                <h2 class="slide-title">Gastronomy Tourism: Global Significance</h2>
+                <div class="global-stats">
+                    <div class="stat-card large" data-title="Food & Beverage Spending" data-icon="🍽️" data-explanation="<p><strong>25-35% of travel budget</strong> is spent on food and beverage by tourists globally.</p><p>This makes gastronomy one of the largest tourism expenditure categories:</p><ul><li><strong>Accommodation:</strong> ~30%</li><li><strong>Food & Beverage:</strong> 25-35%</li><li><strong>Transportation:</strong> ~20%</li><li><strong>Activities & Shopping:</strong> ~20%</li></ul><p>For gastronomy tourists specifically, food spending can exceed 50% of total budget!</p><div class='modal-tip'><p>💡 This means improving food offerings directly increases tourism revenue.</p></div>">
+                        <span class="stat-value">25-35%</span>
+                        <span class="stat-desc">of travel budget spent on food/beverage by tourists</span>
+                    </div>
+                    <div class="stat-card" data-title="Global Market Size" data-icon="💰" data-explanation="<p><strong>$1.1 trillion</strong> is the estimated global food tourism market size in 2024.</p><p>This includes:</p><ul><li>Restaurant spending by tourists</li><li>Food tours and cooking classes</li><li>Wine/food festivals</li><li>Farm visits and agritourism</li></ul><p>For comparison, this is larger than the GDP of most countries!</p><div class='modal-tip'><p>💡 The food tourism market is expected to reach $1.8 trillion by 2030.</p></div>">
+                        <span class="stat-value">$1.1T</span>
+                        <span class="stat-desc">Global food tourism market (2024)</span>
+                    </div>
+                    <div class="stat-card" data-title="Growth Rate" data-icon="📈" data-explanation="<p><strong>8.7% CAGR</strong> (Compound Annual Growth Rate) makes food tourism one of the fastest-growing tourism segments.</p><p>Growth drivers:</p><ul><li>Millennial preference for 'experiences over things'</li><li>Social media amplification of food content</li><li>Post-pandemic desire for authentic, local experiences</li><li>Health and wellness tourism integration</li></ul><div class='modal-tip'><p>💡 At 8.7% growth, the market doubles every 8 years!</p></div>">
+                        <span class="stat-value">8.7%</span>
+                        <span class="stat-desc">Annual growth rate (CAGR)</span>
+                    </div>
+                    <div class="stat-card" data-title="Economic Multiplier" data-icon="🔄" data-explanation="<p><strong>1.5-2.5× multiplier</strong> means each dollar of gastronomy tourism spending generates $1.50-$2.50 in total economic activity.</p><p>How multipliers work:</p><ul><li>Tourist spends $100 at restaurant (direct)</li><li>Restaurant buys $40 from suppliers (indirect)</li><li>Staff spend $30 in local economy (induced)</li><li>Total impact: up to $250</li></ul><p>Higher local sourcing = higher multipliers.</p><div class='modal-tip'><p>💡 Croatia achieves 2.0-2.5× multipliers; Russia only 1.2-1.5×.</p></div>">
+                        <span class="stat-value">1.5-2.5×</span>
+                        <span class="stat-desc">Typical economic multiplier</span>
+                    </div>
+                </div>
+                <div class="global-trends">
+                    <h4>Key Global Trends</h4>
+                    <div class="trend-items">
+                        <div class="trend" data-title="Authentic Experiences" data-icon="🎯" data-explanation="<p><strong>Growing demand for authentic local experiences</strong> is transforming gastronomy tourism.</p><p>Tourists increasingly want:</p><ul><li>Real local food, not tourist versions</li><li>Interaction with producers and chefs</li><li>Understanding of food history and culture</li><li>Unique, Instagram-worthy experiences</li></ul><div class='modal-tip'><p>💡 Farm-to-table experiences command 20-30% price premiums.</p></div>">✓ Growing demand for authentic local experiences</div>
+                        <div class="trend" data-title="Post-Pandemic Growth" data-icon="🚀" data-explanation="<p><strong>Post-pandemic acceleration of culinary tourism</strong> reflects changed traveler priorities.</p><p>COVID-19 impacts:</p><ul><li>Increased interest in outdoor dining and rural tourism</li><li>Greater appreciation for local food systems</li><li>'Revenge travel' driving premium experiences</li><li>Health-conscious food choices</li></ul><div class='modal-tip'><p>💡 Croatia's tourism recovered to 95% of pre-pandemic levels by 2022.</p></div>">✓ Post-pandemic acceleration of culinary tourism</div>
+                        <div class="trend" data-title="Millennial Motivator" data-icon="🍕" data-explanation="<p><strong>Food as primary travel motivator for millennials</strong> is reshaping destination marketing.</p><p>Research shows:</p><ul><li>77% of millennials have food as key travel motivation</li><li>Food content gets 3× more social engagement</li><li>Millennials spend more on food experiences</li><li>They research restaurants before choosing destinations</li></ul><div class='modal-tip'><p>💡 Instagram #foodie has over 200 million posts!</p></div>">✓ Food as primary travel motivator for millennials</div>
+                        <div class="trend" data-title="Destination Branding" data-icon="🏷️" data-explanation="<p><strong>Integration of gastronomy into destination branding</strong> is now essential marketing strategy.</p><p>Successful examples:</p><ul><li>Italy: Pizza, pasta, wine</li><li>Japan: Sushi, ramen culture</li><li>Peru: Ceviche, superfoods</li><li>Croatia: Mediterranean wine & truffles</li></ul><div class='modal-tip'><p>💡 Countries with strong food brands attract higher-spending tourists.</p></div>">✓ Integration of gastronomy into destination branding</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 8: CROATIA PROFILE -->
+        <section class="slide slide--profile slide--dark" data-slide-index="7">
+            <div class="slide-content">
+                <h2 class="slide-title">Croatia: Tourism-Dependent Economy</h2>
+                <div class="profile-header">
+                    <div class="country-flag">🇭🇷</div>
+                    <div class="country-info">
+                        <h3>Republic of Croatia</h3>
+                        <p>EU & Eurozone Member (2023)</p>
+                    </div>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat-box" data-title="Croatia GDP" data-icon="💵" data-explanation="<p><strong>$92.5 billion GDP (2024)</strong> makes Croatia a medium-small European economy.</p><p>For context:</p><ul><li>Similar to Luxembourg or Guatemala</li><li>23.5× smaller than Russia</li><li>About 0.5% of EU's total GDP</li></ul><p>However, Croatia punches above its weight in tourism, generating more revenue than economies 5× its size.</p><div class='modal-tip'><p>💡 Tourism has been Croatia's economic growth engine since independence in 1991.</p></div>">
+                        <span class="label">GDP (2024)</span>
+                        <span class="value">$92.5 billion</span>
+                    </div>
+                    <div class="stat-box" data-title="Croatia Population" data-icon="👥" data-explanation="<p><strong>3.9 million population</strong> makes Croatia one of Europe's smaller countries.</p><p>Key demographics:</p><ul><li>Smaller than most major European cities</li><li>Declining population (emigration to EU)</li><li>Aging workforce challenges</li><li>Tourism provides crucial employment</li></ul><p>Yet this small country welcomes 17+ million tourists annually - more than 4× its population!</p><div class='modal-tip'><p>💡 Per capita tourism revenue is among the highest in the world.</p></div>">
+                        <span class="label">Population</span>
+                        <span class="value">3.9 million</span>
+                    </div>
+                    <div class="stat-box" data-title="GDP Per Capita" data-icon="💰" data-explanation="<p><strong>$23,932 GDP per capita</strong> places Croatia in upper-middle income category.</p><p>Comparison:</p><ul><li>Higher than Russia ($14,889)</li><li>Lower than EU average (~$38,000)</li><li>Tourism significantly boosts this figure</li></ul><p>Without tourism, Croatia's GDP per capita would be approximately $19,700 - showing tourism's importance to living standards.</p><div class='modal-tip'><p>💡 Tourism adds roughly $4,200 per person to Croatian incomes.</p></div>">
+                        <span class="label">GDP per capita</span>
+                        <span class="value">$23,932</span>
+                    </div>
+                    <div class="stat-box highlight" data-title="Tourism Receipts" data-icon="💳" data-explanation="<p><strong>$16.2 billion in tourism receipts (2024)</strong> is remarkable for a country of Croatia's size.</p><p>This represents:</p><ul><li>More than 2× Russia's tourism receipts</li><li>~$4,150 per Croatian resident</li><li>Record high, exceeding pre-pandemic levels</li></ul><p>Croatia outperforms much larger countries because tourism is its strategic priority.</p><div class='modal-tip'><p>💡 Croatia earns more from tourism than Russia despite being 37× smaller in population!</p></div>">
+                        <span class="label">Tourism Receipts</span>
+                        <span class="value">$16.2 billion</span>
+                    </div>
+                    <div class="stat-box highlight-main" data-title="Tourism % of GDP" data-icon="📊" data-explanation="<p><strong>17.51% of GDP from tourism</strong> makes Croatia one of the most tourism-dependent economies in Europe.</p><p>Only a few countries exceed this:</p><ul><li>Maldives: ~40%</li><li>Seychelles: ~25%</li><li>Croatia: ~17.5%</li><li>Iceland: ~8%</li></ul><p>This high dependency creates both opportunities (growth potential) and risks (external shocks like COVID-19).</p><div class='modal-tip'><p>💡 This is 50× higher than Russia's 0.35% - the core finding of our research!</p></div>">
+                        <span class="label">Tourism % of GDP</span>
+                        <span class="value">17.51%</span>
+                    </div>
+                    <div class="stat-box" data-title="Tourism Employment" data-icon="👔" data-explanation="<p><strong>~115,000 employed in tourism</strong> represents significant share of Croatia's workforce.</p><p>Employment impact:</p><ul><li>~7% of total employment directly</li><li>~25% when including indirect jobs</li><li>Higher in coastal regions (up to 40%)</li></ul><p>Tourism provides crucial jobs, especially for young people in regions with limited alternatives.</p><div class='modal-tip'><p>💡 Seasonality means many of these jobs are temporary (May-October).</p></div>">
+                        <span class="label">Tourism Employment</span>
+                        <span class="value">~115,000</span>
+                    </div>
+                </div>
+                <div class="profile-note">
+                    <strong>Key Fact:</strong> Croatia has one of the highest tourism dependencies in Europe
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 9: CROATIA GASTRONOMY -->
+        <section class="slide slide--content slide--dark" data-slide-index="8">
+            <div class="slide-content">
+                <h2 class="slide-title">Croatia: Gastronomy as Tourism Driver</h2>
+                <div class="gastro-grid">
+                    <div class="gastro-main" data-title="Croatian Cuisine" data-icon="🍽️" data-explanation="<p><strong>Mediterranean Cuisine with Regional Diversity</strong> gives Croatia a strong culinary identity.</p><p><strong>Regional specialties:</strong></p><ul><li><strong>Istria:</strong> Italian influence, truffles, olive oil, Malvazija wine</li><li><strong>Dalmatia:</strong> Seafood, pršut ham, Plavac Mali wine</li><li><strong>Slavonia:</strong> Continental cuisine, kulen sausage, freshwater fish</li><li><strong>Zagorje:</strong> Central European influence, štrukli pastry</li></ul><p>This diversity allows for year-round gastronomy tourism across different regions.</p><div class='modal-tip'><p>💡 Each region can attract tourists even when coastal areas are off-season.</p></div>">
+                        <h4>Mediterranean Cuisine with Regional Diversity</h4>
+                        <div class="regions">
+                            <div class="region"><strong>Istria:</strong> Truffles, olive oil, wine</div>
+                            <div class="region"><strong>Dalmatia:</strong> Seafood, pršut, wine</div>
+                            <div class="region"><strong>Slavonia:</strong> Kulen, paprika, freshwater fish</div>
+                            <div class="region"><strong>Zagorje:</strong> štrukli, turkey, game</div>
+                        </div>
+                    </div>
+                    <div class="gastro-products" data-title="Export Products" data-icon="📦" data-explanation="<p><strong>Key Export Products</strong> have international recognition and command premium prices.</p><ul><li><strong>🫒 Olive Oil:</strong> 15 PDO regions, winning international awards. Istrian oils rated among world's best.</li><li><strong>🍷 Wine:</strong> 130+ indigenous grape varieties (Plavac Mali, Graševina, Malvazija). Rising global reputation.</li><li><strong>🍄 Truffles:</strong> Istrian white truffles compete with Italian; more affordable = value proposition.</li><li><strong>🥓 Pršut:</strong> Dalmatian and Istrian dry-cured ham with PDO status.</li><li><strong>🧀 Paški Sir:</strong> PDO sheep cheese from Pag island.</li></ul><div class='modal-tip'><p>💡 PDO/PGI certification allows Croatia to command 20-40% price premiums.</p></div>">
+                        <h4>Key Export Products</h4>
+                        <div class="product-list">
+                            <span class="product">🫒 Olive Oil (15 PDO regions)</span>
+                            <span class="product">🍷 Wine (130+ indigenous varieties)</span>
+                            <span class="product">🍄 Truffles (Istrian white & black)</span>
+                            <span class="product">🥓 Pršut (Dalmatian & Istrian)</span>
+                            <span class="product">🧀 Cheese (Paški sir PDO)</span>
+                        </div>
+                    </div>
+                    <div class="gastro-achievements" data-title="International Recognition" data-icon="⭐" data-explanation="<p><strong>International Recognition</strong> builds Croatia's gastronomy brand and attracts food tourists.</p><ul><li><strong>⭐ 10 Michelin-starred restaurants:</strong> Including 2-star restaurants in Zagreb and coast</li><li><strong>🏆 140+ Gault Millau listings:</strong> Growing fine dining scene</li><li><strong>🍷 Top 10 wine destination:</strong> Wine Enthusiast, Decanter recognition</li></ul><p>This recognition generates international media coverage worth millions in marketing value.</p><div class='modal-tip'><p>💡 A Michelin star can increase restaurant revenue by 30-50% and benefits the whole region.</p></div>">
+                        <h4>International Recognition</h4>
+                        <div class="achievement-list">
+                            <span>⭐ 10 Michelin-starred restaurants</span>
+                            <span>🏆 140+ Gault Millau listings</span>
+                            <span>🍷 Top 10 wine destination</span>
+                        </div>
+                    </div>
+                    <div class="gastro-challenge" data-title="Seasonality Challenge" data-icon="⚠️" data-explanation="<p><strong>Extreme Seasonality</strong> is Croatia's biggest gastronomy tourism challenge.</p><p><strong>The problem:</strong></p><ul><li>60%+ of tourist arrivals concentrated in July-August</li><li>Many restaurants close October-April</li><li>Staff retention issues</li><li>Unsustainable pressure on infrastructure in summer</li></ul><p><strong>Economic impact:</strong></p><ul><li>Revenue volatility</li><li>Underutilized capacity most of the year</li><li>Higher unit costs</li></ul><div class='modal-tip'><p>💡 Gastronomy tourism in off-season (wine harvests, truffle season) is a key diversification strategy.</p></div>">
+                        <h4>⚠️ Key Challenge</h4>
+                        <p><strong>Extreme seasonality:</strong> 60%+ of arrivals in July-August</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 10: CROATIA DATA -->
+        <section class="slide slide--data slide--dark" data-slide-index="9">
+            <div class="slide-content">
+                <h2 class="slide-title">Croatia: Tourism Economic Performance</h2>
+                <div class="data-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Indicator</th>
+                                <th>2020</th>
+                                <th>2022</th>
+                                <th>2024</th>
+                                <th>Change</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tourism Receipts (bil $)</td>
+                                <td>5.5</td>
+                                <td>13.4</td>
+                                <td>16.2</td>
+                                <td class="positive">+195%</td>
+                            </tr>
+                            <tr>
+                                <td>% of GDP</td>
+                                <td>9.5%</td>
+                                <td>18.8%</td>
+                                <td>17.5%</td>
+                                <td class="positive">+84%</td>
+                            </tr>
+                            <tr>
+                                <td>Arrivals (millions)</td>
+                                <td>5.5</td>
+                                <td>15.3</td>
+                                <td>~17.0</td>
+                                <td class="positive">+209%</td>
+                            </tr>
+                            <tr>
+                                <td>Employment (000s)</td>
+                                <td>~80</td>
+                                <td>~105</td>
+                                <td>~120</td>
+                                <td class="positive">+50%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="chart-visual">
+                        <h4>Tourism Recovery 2020-2024</h4>
+                        <div class="bar-chart">
+                            <div class="bar" style="--height: 34%;" data-label="2020" data-value="$5.5B"></div>
+                            <div class="bar" style="--height: 83%;" data-label="2022" data-value="$13.4B"></div>
+                            <div class="bar" style="--height: 100%;" data-label="2024" data-value="$16.2B"></div>
+                        </div>
+                    </div>
+                    <div class="data-insight">
+                        <strong>Key Insight:</strong> Full recovery from COVID-19 achieved by 2022, with continued growth
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 11: RUSSIA PROFILE -->
+        <section class="slide slide--profile slide--dark" data-slide-index="10">
+            <div class="slide-content">
+                <h2 class="slide-title">Russia: Diversified Continental Economy</h2>
+                <div class="profile-header">
+                    <div class="country-flag">🇷🇺</div>
+                    <div class="country-info">
+                        <h3>Russian Federation</h3>
+                        <p>World's Largest Country (11 time zones)</p>
+                    </div>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat-box" data-title="Russia GDP" data-icon="💵" data-explanation="<p><strong>$2,174 billion GDP (2024)</strong> makes Russia one of the world's largest economies.</p><p>Key points:</p><ul><li>23.5× larger than Croatia's GDP</li><li>11th largest economy globally</li><li>Diversified: energy, manufacturing, agriculture, services</li></ul><p>Tourism is marginal because Russia has many other revenue sources, unlike tourism-dependent Croatia.</p><div class='modal-tip'><p>💡 If Russia had Croatia's tourism intensity, it would earn $380 billion from tourism!</p></div>">
+                        <span class="label">GDP (2024)</span>
+                        <span class="value">$2,174 billion</span>
+                        <span class="note">23.5× Croatia</span>
+                    </div>
+                    <div class="stat-box" data-title="Russia Population" data-icon="👥" data-explanation="<p><strong>146 million population</strong> across 11 time zones creates a vast domestic market.</p><p>Significance:</p><ul><li>37× larger than Croatia</li><li>9th most populous country</li><li>Domestic tourism potential rivals international</li></ul><p>This population can support gastronomy tourism development without international visitors.</p><div class='modal-tip'><p>💡 Russia's domestic market alone is larger than Germany, UK, and France combined!</p></div>">
+                        <span class="label">Population</span>
+                        <span class="value">146 million</span>
+                        <span class="note">37× Croatia</span>
+                    </div>
+                    <div class="stat-box" data-title="GDP Per Capita" data-icon="💰" data-explanation="<p><strong>$14,889 GDP per capita</strong> places Russia in upper-middle income category.</p><p>Comparison:</p><ul><li>Lower than Croatia ($23,932)</li><li>Reflects income distribution across vast territory</li><li>Growing middle class supports domestic tourism</li></ul><div class='modal-tip'><p>💡 Rising incomes are driving domestic tourism growth (+55% since 2020).</p></div>">
+                        <span class="label">GDP per capita</span>
+                        <span class="value">$14,889</span>
+                    </div>
+                    <div class="stat-box" data-title="Russia Tourism Receipts" data-icon="💳" data-explanation="<p><strong>$7.6 billion in tourism receipts</strong> is surprisingly low for such a large country.</p><p>Key factors:</p><ul><li>Less than half of Croatia's receipts</li><li>International tourism declined due to geopolitics</li><li>Domestic tourism not fully monetized</li></ul><p>Russia has massive untapped tourism potential.</p><div class='modal-tip'><p>💡 Russia could potentially 10× its tourism receipts with different policies.</p></div>">
+                        <span class="label">Tourism Receipts</span>
+                        <span class="value">$7.6 billion</span>
+                    </div>
+                    <div class="stat-box highlight-main" data-title="Tourism % of GDP" data-icon="📊" data-explanation="<p><strong>0.35% of GDP from tourism</strong> shows tourism is economically marginal for Russia.</p><p>Why so low?</p><ul><li>Diversified economy with energy, manufacturing, agriculture</li><li>Limited international tourism infrastructure</li><li>Vast distances increase travel costs</li><li>Not a strategic economic priority</li></ul><p>This is 50× lower than Croatia's 17.51%!</p><div class='modal-tip'><p>💡 Even tripling tourism would only add ~1% to Russia's GDP.</p></div>">
+                        <span class="label">Tourism % of GDP</span>
+                        <span class="value">0.35%</span>
+                    </div>
+                    <div class="stat-box" data-title="Russia Tourism Employment" data-icon="👔" data-explanation="<p><strong>~1.12 million employed in tourism</strong> is nearly 10× Croatia's number.</p><p>Key insight:</p><ul><li>Despite low % of GDP, absolute employment is huge</li><li>Represents ~1.5% of total employment</li><li>Concentrated in Moscow, St. Petersburg, resorts</li></ul><p>This paradox shows how economy size affects tourism's role.</p><div class='modal-tip'><p>💡 Russia employs 10× more in tourism while earning half the revenue!</p></div>">
+                        <span class="label">Tourism Employment</span>
+                        <span class="value">~1.12 million</span>
+                    </div>
+                </div>
+                <div class="profile-note">
+                    <strong>Key Fact:</strong> Despite 10× lower tourism % of GDP, Russia employs 10× more people in tourism
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 12: RUSSIA GASTRONOMY -->
+        <section class="slide slide--content slide--dark" data-slide-index="11">
+            <div class="slide-content">
+                <h2 class="slide-title">Russia: Gastronomy as Cultural Heritage</h2>
+                <div class="gastro-grid">
+                    <div class="gastro-main" data-title="Russian Cuisine" data-icon="🍽️" data-explanation="<p><strong>Continental Cuisine with 180+ Ethnic Influences</strong> reflects Russia's vast diversity.</p><p><strong>Regional culinary traditions:</strong></p><ul><li><strong>European Russia:</strong> Classic Slavic - borscht, pelmeni, blini, beef stroganoff</li><li><strong>Caucasus:</strong> Georgian khinkali, Armenian dolma, rich spices</li><li><strong>Volga Region:</strong> Tatar echpochmak, chak-chak sweets</li><li><strong>Siberia/Far East:</strong> Game, fish, indigenous berries and mushrooms</li></ul><p>This diversity could support extensive regional food routes.</p><div class='modal-tip'><p>💡 Russia's culinary diversity rivals Italy's, but is less internationally known.</p></div>">
+                        <h4>Continental Cuisine with 180+ Ethnic Influences</h4>
+                        <div class="regions">
+                            <div class="region"><strong>European Russia:</strong> Traditional Slavic cuisine</div>
+                            <div class="region"><strong>Caucasus:</strong> Georgian, Armenian influences</div>
+                            <div class="region"><strong>Volga Region:</strong> Tatar cuisine</div>
+                            <div class="region"><strong>Siberia/Far East:</strong> Indigenous traditions</div>
+                        </div>
+                    </div>
+                    <div class="gastro-products" data-title="Russian Products" data-icon="📦" data-explanation="<p><strong>Signature Products</strong> have domestic fame but limited international branding.</p><ul><li><strong>🥣 Traditional dishes:</strong> Borscht, pelmeni, blini - comfort food appeal</li><li><strong>🦪 Caviar:</strong> Caspian sturgeon caviar - luxury product with global recognition</li><li><strong>🍯 Honey:</strong> World's largest producer - diverse regional varieties</li><li><strong>🍷 Krasnodar wine:</strong> Emerging region, improving quality</li><li><strong>🫖 Tea culture:</strong> Unique samovar tradition</li></ul><p>Most products lack international certification (PDO/PGI equivalent).</p><div class='modal-tip'><p>💡 Russian honey exports could grow 10× with proper branding and certification.</p></div>">
+                        <h4>Signature Products</h4>
+                        <div class="product-list">
+                            <span class="product">🥣 Traditional dishes (borscht, pelmeni, blini)</span>
+                            <span class="product">🦪 Caviar (Caspian)</span>
+                            <span class="product">🍯 Honey (world's largest producer)</span>
+                            <span class="product">🍷 Emerging wine regions (Krasnodar)</span>
+                            <span class="product">🫖 Tea culture traditions</span>
+                        </div>
+                    </div>
+                    <div class="gastro-focus" data-title="Market Focus" data-icon="🎯" data-explanation="<p><strong>Market Focus</strong> reflects Russia's strategic priorities for gastronomy tourism.</p><p><strong>Domestic Tourism:</strong></p><ul><li>Primary focus due to 146 million population</li><li>Growing middle class seeking travel experiences</li><li>Regional circuits connecting culinary destinations</li></ul><p><strong>International Recognition:</strong></p><ul><li>Limited but growing interest</li><li>New Russian Cuisine movement gaining attention</li><li>Moscow and St. Petersburg fine dining developing</li></ul><div class='modal-tip'><p>💡 Domestic trips grew 55% since 2020, partly compensating for international decline.</p></div>">
+                        <h4>Market Focus</h4>
+                        <div class="focus-item">
+                            <span><strong>Domestic Tourism:</strong> Primary focus - vast internal market</span>
+                        </div>
+                        <div class="focus-item">
+                            <span><strong>International Recognition:</strong> Limited but growing</span>
+                        </div>
+                    </div>
+                    <div class="gastro-challenge" data-title="Russia Challenges" data-icon="⚠️" data-explanation="<p><strong>Key Challenges</strong> hinder Russia's gastronomy tourism development.</p><ul><li><strong>Infrastructure gaps:</strong> Transportation between regions expensive and time-consuming. Rural tourism facilities underdeveloped.</li><li><strong>Quality consistency:</strong> Lack of certification standards. Variable service quality.</li><li><strong>Marketing fragmentation:</strong> No unified gastronomy tourism brand. Regions compete rather than cooperate.</li></ul><p>These challenges represent opportunities for future development.</p><div class='modal-tip'><p>💡 Investment in infrastructure could unlock billions in untapped tourism potential.</p></div>">
+                        <h4>⚠️ Key Challenges</h4>
+                        <p>Infrastructure gaps • Quality consistency • Marketing fragmentation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 13: RUSSIA DATA -->
+        <section class="slide slide--data slide--dark" data-slide-index="12">
+            <div class="slide-content">
+                <h2 class="slide-title">Russia: Tourism Economic Performance</h2>
+                <div class="data-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Indicator</th>
+                                <th>2020</th>
+                                <th>2022</th>
+                                <th>2024</th>
+                                <th>Change</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tourism Receipts (bil $)</td>
+                                <td>3.9</td>
+                                <td>5.6</td>
+                                <td>7.6</td>
+                                <td class="positive">+95%</td>
+                            </tr>
+                            <tr>
+                                <td>% of GDP</td>
+                                <td>0.26%</td>
+                                <td>0.24%</td>
+                                <td>0.35%</td>
+                                <td class="positive">+35%</td>
+                            </tr>
+                            <tr>
+                                <td>Int'l Arrivals (millions)</td>
+                                <td>6.4</td>
+                                <td>~4.0</td>
+                                <td>~3.5</td>
+                                <td class="negative">-45%</td>
+                            </tr>
+                            <tr>
+                                <td>Domestic Trips (millions)</td>
+                                <td>~55</td>
+                                <td>~70</td>
+                                <td>~85</td>
+                                <td class="positive">+55%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="chart-visual">
+                        <h4>Tourism Receipts 2020-2024</h4>
+                        <div class="bar-chart">
+                            <div class="bar" style="--height: 51%;" data-label="2020" data-value="$3.9B"></div>
+                            <div class="bar" style="--height: 74%;" data-label="2022" data-value="$5.6B"></div>
+                            <div class="bar" style="--height: 100%;" data-label="2024" data-value="$7.6B"></div>
+                        </div>
+                    </div>
+                    <div class="data-insight">
+                        <strong>Key Insight:</strong> Shift to domestic tourism compensates for international decline
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 14: ECONOMIC COMPARISON -->
+        <section class="slide slide--comparison slide--dark" data-slide-index="13">
+            <div class="slide-content">
+                <h2 class="slide-title">Head-to-Head: Economic Comparison</h2>
+                <div class="comparison-table-container">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Indicator</th>
+                                <th class="croatia">🇭🇷 Croatia</th>
+                                <th class="russia">🇷🇺 Russia</th>
+                                <th>Ratio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>GDP (2024)</td>
+                                <td>$92.5 billion</td>
+                                <td>$2,174 billion</td>
+                                <td>1 : 23.5</td>
+                            </tr>
+                            <tr>
+                                <td>Population</td>
+                                <td>3.9 million</td>
+                                <td>146 million</td>
+                                <td>1 : 37</td>
+                            </tr>
+                            <tr>
+                                <td>Tourism Receipts</td>
+                                <td>$16.2 billion</td>
+                                <td>$7.6 billion</td>
+                                <td class="highlight-cell">2.1 : 1</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>Tourism % of GDP</td>
+                                <td class="highlight">17.51%</td>
+                                <td class="highlight">0.35%</td>
+                                <td class="mega-highlight">50 : 1</td>
+                            </tr>
+                            <tr>
+                                <td>Tourism Employment</td>
+                                <td>115,000</td>
+                                <td>1.12 million</td>
+                                <td>1 : 9.7</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="comparison-insight">
+                    <div class="insight-box">
+                        <span class="insight-icon">💡</span>
+                        <span class="insight-text">Croatia earns <strong>2× more tourism revenue</strong> with <strong>37× smaller population</strong></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 15: TWO MODELS -->
+        <section class="slide slide--comparison slide--dark" data-slide-index="14">
+            <div class="slide-content">
+                <h2 class="slide-title">Two Development Models</h2>
+                <div class="models-comparison">
+                    <div class="model-card croatia-model" data-title="Export Model (Croatia)" data-icon="🇭🇷" data-explanation="<p><strong>Croatia's Export Model</strong> uses gastronomy as a primary tourism attraction to generate foreign exchange.</p><p><strong>Characteristics:</strong></p><ul><li><strong>International market focus:</strong> 90%+ visitors from abroad</li><li><strong>Premium pricing:</strong> Mediterranean positioning commands higher prices</li><li><strong>Strong branding:</strong> EU certifications, Michelin recognition</li><li><strong>Tight value chain:</strong> 60-70% local sourcing</li></ul><p><strong>Risk:</strong> Over-dependence on external demand. COVID-19 showed vulnerability when borders closed.</p><div class='modal-tip'><p>💡 This model works for small countries with limited domestic markets.</p></div>">
+                        <div class="model-header">
+                            <span class="model-flag">🇭🇷</span>
+                            <h3>EXPORT MODEL</h3>
+                            <span class="model-subtitle">Gastronomy as Tourism Attraction</span>
+                        </div>
+                        <div class="model-features">
+                            <div class="feature"><span class="feature-icon">🌍</span><span>International market focus</span></div>
+                            <div class="feature"><span class="feature-icon">💎</span><span>Premium pricing strategy</span></div>
+                            <div class="feature"><span class="feature-icon">🏆</span><span>Strong international branding</span></div>
+                            <div class="feature"><span class="feature-icon">📈</span><span>High economic dependency</span></div>
+                            <div class="feature"><span class="feature-icon">🔗</span><span>Tight value chain integration</span></div>
+                        </div>
+                        <div class="model-risk"><strong>Risk:</strong> Over-dependence on external demand</div>
+                    </div>
+                    <div class="model-card russia-model" data-title="Domestic Model (Russia)" data-icon="🇷🇺" data-explanation="<p><strong>Russia's Domestic Model</strong> uses gastronomy primarily for regional development and cultural preservation.</p><p><strong>Characteristics:</strong></p><ul><li><strong>Domestic market focus:</strong> 146M population is the target</li><li><strong>Regional development tool:</strong> Food tourism develops rural areas</li><li><strong>Low economic dependency:</strong> Tourism is one of many sectors</li><li><strong>Self-sufficiency:</strong> Less vulnerable to external shocks</li></ul><p><strong>Risk:</strong> Underutilized international potential. Missing foreign exchange earnings.</p><div class='modal-tip'><p>💡 This model suits large countries with diverse economies and big domestic markets.</p></div>">
+                        <div class="model-header">
+                            <span class="model-flag">🇷🇺</span>
+                            <h3>DOMESTIC MODEL</h3>
+                            <span class="model-subtitle">Gastronomy as Cultural Asset</span>
+                        </div>
+                        <div class="model-features">
+                            <div class="feature"><span class="feature-icon">🏠</span><span>Domestic market focus</span></div>
+                            <div class="feature"><span class="feature-icon">🗺️</span><span>Regional development tool</span></div>
+                            <div class="feature"><span class="feature-icon">📊</span><span>Low economic dependency</span></div>
+                            <div class="feature"><span class="feature-icon">🌱</span><span>Self-sufficiency potential</span></div>
+                            <div class="feature"><span class="feature-icon">🔓</span><span>Loose value chain integration</span></div>
+                        </div>
+                        <div class="model-risk"><strong>Risk:</strong> Underutilized international potential</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 16: VALUE CHAIN -->
+        <section class="slide slide--data slide--dark" data-slide-index="15">
+            <div class="slide-content">
+                <h2 class="slide-title">Value Chain Integration Analysis</h2>
+                <div class="value-chain-container">
+                    <table class="chain-table">
+                        <thead>
+                            <tr>
+                                <th>Dimension</th>
+                                <th class="croatia">🇭🇷 Croatia</th>
+                                <th class="russia">🇷🇺 Russia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Agriculture-Tourism Links</td>
+                                <td><span class="stars">★★★★★</span></td>
+                                <td><span class="stars">★★☆☆☆</span></td>
+                            </tr>
+                            <tr>
+                                <td>Local Sourcing Rate</td>
+                                <td>60-70%</td>
+                                <td>~30%</td>
+                            </tr>
+                            <tr>
+                                <td>Quality Certification</td>
+                                <td>Advanced (EU PDO/PGI)</td>
+                                <td>Emerging</td>
+                            </tr>
+                            <tr>
+                                <td>Agritourism Development</td>
+                                <td>Mature</td>
+                                <td>Early Stage</td>
+                            </tr>
+                            <tr>
+                                <td>Scale Potential</td>
+                                <td>Limited</td>
+                                <td>High</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="chain-visual">
+                        <h4>Value Chain Flow</h4>
+                        <div class="chain-diagram">
+                            <div class="chain-step" data-title="Agriculture" data-icon="🌾" data-explanation="<p><strong>Agriculture</strong> is the foundation of the gastronomy tourism value chain.</p><p>Key activities:</p><ul><li>Growing grapes, olives, vegetables</li><li>Raising livestock</li><li>Producing raw materials</li></ul><p><strong>Croatia:</strong> Strong local agriculture integration<br><strong>Russia:</strong> Vast agricultural potential, but weaker tourism links</p><div class='modal-tip'><p>💡 Farm visits add 15-20% to tourist spending.</p></div>">🌾 Agriculture</div>
+                            <div class="chain-arrow">→</div>
+                            <div class="chain-step" data-title="Processing" data-icon="🏭" data-explanation="<p><strong>Processing</strong> adds value to raw agricultural products.</p><p>Examples:</p><ul><li>Wine-making from grapes</li><li>Olive oil pressing</li><li>Cheese aging</li><li>Meat curing (pršut)</li></ul><p><strong>Croatia:</strong> Many PDO/PGI certified processors<br><strong>Russia:</strong> Large industrial capacity, emerging artisanal sector</p><div class='modal-tip'><p>💡 Processing can multiply product value by 5-10×.</p></div>">🏭 Processing</div>
+                            <div class="chain-arrow">→</div>
+                            <div class="chain-step" data-title="Hospitality" data-icon="🍽️" data-explanation="<p><strong>Hospitality</strong> delivers the gastronomy experience to tourists.</p><p>Includes:</p><ul><li>Restaurants and fine dining</li><li>Hotels with culinary focus</li><li>Cooking classes</li><li>Food tours</li></ul><p><strong>Croatia:</strong> 10 Michelin stars, extensive restaurant network<br><strong>Russia:</strong> Growing fine dining in cities, limited in regions</p><div class='modal-tip'><p>💡 Food can represent 40%+ of hospitality revenue.</p></div>">🍽️ Hospitality</div>
+                            <div class="chain-arrow">→</div>
+                            <div class="chain-step" data-title="Tourism" data-icon="✈️" data-explanation="<p><strong>Tourism</strong> brings visitors to experience the gastronomy.</p><p>Marketing channels:</p><ul><li>Destination branding</li><li>Food festivals and events</li><li>Wine/food routes</li><li>Social media and content</li></ul><p><strong>Croatia:</strong> Gastronomy central to destination brand<br><strong>Russia:</strong> Tourism marketing fragmented</p><div class='modal-tip'><p>💡 Strong destination branding increases visitor spending by 25%.</p></div>">✈️ Tourism</div>
+                        </div>
+                    </div>
+                    <div class="chain-insight" data-title="Key Finding" data-icon="💡" data-explanation="<p><strong>Croatia's Superior Integration</strong> generates significantly higher economic multipliers.</p><p><strong>What this means:</strong></p><ul><li>Every €1 spent by tourists in Croatia creates €2.00-2.50 in total economic activity</li><li>In Russia, the same €1 creates only €1.20-1.50</li></ul><p><strong>Why the difference:</strong></p><ul><li>Croatia sources 60-70% locally; Russia only ~30%</li><li>Croatia has mature agritourism; Russia is early stage</li><li>EU standards ensure quality consistency in Croatia</li></ul><div class='modal-tip'><p>💡 Improving value chain integration is Russia's biggest opportunity.</p></div>">
+                        <strong>Key Finding:</strong> Croatia's superior integration generates higher multipliers (2.0-2.5× vs 1.2-1.5×)
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 17: SWOT -->
+        <section class="slide slide--comparison slide--dark" data-slide-index="16">
+            <div class="slide-content">
+                <h2 class="slide-title">Strategic SWOT Analysis</h2>
+                <div class="swot-dual">
+                    <div class="swot-country croatia">
+                        <h3>🇭🇷 Croatia</h3>
+                        <div class="swot-grid">
+                            <div class="swot-box strengths" data-title="Croatia Strengths" data-icon="💪" data-explanation="<p><strong>Croatia's Strengths</strong> create competitive advantage in gastronomy tourism.</p><ul><li><strong>International brand recognition:</strong> Mediterranean identity, EU quality standards, Michelin stars</li><li><strong>EU standards:</strong> PDO/PGI certifications ensure quality and command price premiums</li><li><strong>Quality products:</strong> World-class olive oil, wine, truffles with documented origins</li></ul><div class='modal-tip'><p>💡 These strengths took decades to build and are difficult for competitors to replicate.</p></div>">
+                                <h4>Strengths</h4>
+                                <ul><li>International brand</li><li>EU standards</li><li>Quality products</li></ul>
+                            </div>
+                            <div class="swot-box weaknesses" data-title="Croatia Weaknesses" data-icon="⚠️" data-explanation="<p><strong>Croatia's Weaknesses</strong> limit growth potential and create vulnerabilities.</p><ul><li><strong>Extreme seasonality:</strong> 60%+ arrivals in July-August creates capacity problems</li><li><strong>High dependency:</strong> 17.5% GDP reliance makes economy vulnerable to shocks</li><li><strong>Small scale:</strong> Limited capacity to grow without infrastructure investment</li></ul><div class='modal-tip'><p>💡 COVID-19 exposed the risk of over-dependence when tourism dropped 70% in 2020.</p></div>">
+                                <h4>Weaknesses</h4>
+                                <ul><li>Extreme seasonality</li><li>High dependency</li><li>Small scale</li></ul>
+                            </div>
+                            <div class="swot-box opportunities" data-title="Croatia Opportunities" data-icon="🚀" data-explanation="<p><strong>Croatia's Opportunities</strong> for gastronomy tourism development.</p><ul><li><strong>Premium positioning:</strong> Growing luxury food tourism market willing to pay more</li><li><strong>Off-season development:</strong> Wine harvest (autumn), truffle season (winter)</li><li><strong>Inland expansion:</strong> Continental Croatia (Slavonia, Zagorje) underutilized</li></ul><div class='modal-tip'><p>💡 Successful off-season gastronomy could add 20-30% to annual tourism revenue.</p></div>">
+                                <h4>Opportunities</h4>
+                                <ul><li>Premium positioning</li><li>Off-season dev.</li><li>Inland expansion</li></ul>
+                            </div>
+                            <div class="swot-box threats" data-title="Croatia Threats" data-icon="⛈️" data-explanation="<p><strong>Croatia's Threats</strong> could undermine gastronomy tourism success.</p><ul><li><strong>Competition:</strong> Greece, Portugal, Italy offering similar Mediterranean experiences</li><li><strong>Over-tourism:</strong> Dubrovnik already facing capacity issues and resident complaints</li><li><strong>Climate change:</strong> Rising temperatures may affect agriculture and coastline</li></ul><div class='modal-tip'><p>💡 Diversification into off-season and inland tourism can mitigate these threats.</p></div>">
+                                <h4>Threats</h4>
+                                <ul><li>Competition</li><li>Over-tourism</li><li>Climate change</li></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swot-country russia">
+                        <h3>🇷🇺 Russia</h3>
+                        <div class="swot-grid">
+                            <div class="swot-box strengths" data-title="Russia Strengths" data-icon="💪" data-explanation="<p><strong>Russia's Strengths</strong> provide foundation for gastronomy tourism growth.</p><ul><li><strong>Vast domestic market:</strong> 146 million people, growing middle class</li><li><strong>Cultural diversity:</strong> 180+ ethnic groups with unique cuisines</li><li><strong>Self-sufficiency:</strong> Less vulnerable to international tourism fluctuations</li></ul><div class='modal-tip'><p>💡 Russia's domestic market alone is larger than many countries' total tourism markets.</p></div>">
+                                <h4>Strengths</h4>
+                                <ul><li>Vast domestic market</li><li>Cultural diversity</li><li>Self-sufficiency</li></ul>
+                            </div>
+                            <div class="swot-box weaknesses" data-title="Russia Weaknesses" data-icon="⚠️" data-explanation="<p><strong>Russia's Weaknesses</strong> hinder gastronomy tourism potential.</p><ul><li><strong>Limited international brand:</strong> Russian cuisine not widely known abroad</li><li><strong>Infrastructure gaps:</strong> Transportation and rural facilities underdeveloped</li><li><strong>Fragmentation:</strong> No unified national gastronomy tourism strategy</li></ul><div class='modal-tip'><p>💡 These weaknesses also represent opportunities for investment and improvement.</p></div>">
+                                <h4>Weaknesses</h4>
+                                <ul><li>Limited intl. brand</li><li>Infrastructure</li><li>Fragmentation</li></ul>
+                            </div>
+                            <div class="swot-box opportunities" data-title="Russia Opportunities" data-icon="🚀" data-explanation="<p><strong>Russia's Opportunities</strong> for future development.</p><ul><li><strong>Regional development:</strong> Food tourism can develop rural areas</li><li><strong>Authentic positioning:</strong> Growing global interest in 'undiscovered' cuisines</li><li><strong>Domestic growth:</strong> Rising incomes = more domestic food tourism spending</li></ul><div class='modal-tip'><p>💡 Domestic tourism grew 55% since 2020 - this trend can continue.</p></div>">
+                                <h4>Opportunities</h4>
+                                <ul><li>Regional development</li><li>Authentic positioning</li><li>Domestic growth</li></ul>
+                            </div>
+                            <div class="swot-box threats" data-title="Russia Threats" data-icon="⛈️" data-explanation="<p><strong>Russia's Threats</strong> to gastronomy tourism development.</p><ul><li><strong>Geopolitics:</strong> International relations affect tourism and investment</li><li><strong>Investment limits:</strong> Competing priorities for government spending</li><li><strong>Quality gaps:</strong> Inconsistent service standards deter visitors</li></ul><div class='modal-tip'><p>💡 Domestic focus can partially insulate from geopolitical impacts.</p></div>">
+                                <h4>Threats</h4>
+                                <ul><li>Geopolitics</li><li>Investment limits</li><li>Quality gaps</li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 18: RECOMMENDATIONS -->
+        <section class="slide slide--content slide--dark" data-slide-index="17">
+            <div class="slide-content">
+                <h2 class="slide-title">Policy Recommendations</h2>
+                <div class="recommendations-container">
+                    <div class="rec-column croatia">
+                        <h3>🇭🇷 For Croatia</h3>
+                        <div class="rec-list">
+                            <div class="rec-item" data-title="Diversify Within Tourism" data-icon="🎯" data-explanation="<p><strong>Diversify Within Tourism</strong> to reduce seasonality and dependency risks.</p><p><strong>Specific actions:</strong></p><ul><li>Promote autumn wine harvest experiences</li><li>Develop winter truffle tourism in Istria</li><li>Create gastronomy trails in continental Croatia</li><li>Target off-season business travelers</li></ul><p><strong>Expected impact:</strong> +15-20% in shoulder/off-season revenue</p><div class='modal-tip'><p>💡 Italy's Piedmont region successfully attracts year-round food tourists using this model.</p></div>">
+                                <span class="rec-num">1</span>
+                                <div class="rec-content">
+                                    <strong>Diversify Within Tourism</strong>
+                                    <p>Develop gastronomy tourism in off-peak seasons and inland regions</p>
+                                </div>
+                            </div>
+                            <div class="rec-item" data-title="Strengthen Value Chains" data-icon="🔗" data-explanation="<p><strong>Strengthen Value Chains</strong> to increase economic multipliers.</p><p><strong>Specific actions:</strong></p><ul><li>Require minimum 70% local sourcing for tourism certification</li><li>Create direct partnerships between farmers and restaurants</li><li>Develop more PDO/PGI products</li><li>Support local food processing facilities</li></ul><p><strong>Expected impact:</strong> Increase multiplier from 2.0× to 2.5×</p><div class='modal-tip'><p>💡 Every 10% increase in local sourcing adds ~€50M to the economy.</p></div>">
+                                <span class="rec-num">2</span>
+                                <div class="rec-content">
+                                    <strong>Strengthen Value Chains</strong>
+                                    <p>Increase local sourcing to 80%+ through partnerships</p>
+                                </div>
+                            </div>
+                            <div class="rec-item" data-title="Build Resilience" data-icon="🛡️" data-explanation="<p><strong>Build Resilience</strong> against external shocks like COVID-19.</p><p><strong>Specific actions:</strong></p><ul><li>Create tourism stabilization fund (1% of receipts)</li><li>Diversify source markets beyond EU</li><li>Develop domestic tourism marketing</li><li>Build emergency support mechanisms</li></ul><p><strong>Expected impact:</strong> 30% faster recovery from future crises</p><div class='modal-tip'><p>💡 COVID-19 cost Croatia ~€10B in lost tourism - resilience is worth investing in.</p></div>">
+                                <span class="rec-num">3</span>
+                                <div class="rec-content">
+                                    <strong>Build Resilience</strong>
+                                    <p>Create tourism stabilization funds; diversify markets</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rec-column russia">
+                        <h3>🇷🇺 For Russia</h3>
+                        <div class="rec-list">
+                            <div class="rec-item" data-title="Prioritize Domestic Tourism" data-icon="🏠" data-explanation="<p><strong>Prioritize Domestic Tourism</strong> by developing regional gastronomy circuits.</p><p><strong>Specific actions:</strong></p><ul><li>Create 'Golden Ring of Gastronomy' route</li><li>Develop regional food festivals calendar</li><li>Market domestic food tourism to urban middle class</li><li>Subsidize domestic tourism packages</li></ul><p><strong>Expected impact:</strong> +20% domestic food tourism spending</p><div class='modal-tip'><p>💡 Russia's 146M population is an underutilized resource for tourism growth.</p></div>">
+                                <span class="rec-num">1</span>
+                                <div class="rec-content">
+                                    <strong>Prioritize Domestic Tourism</strong>
+                                    <p>Develop regional gastronomy circuits; leverage internal market</p>
+                                </div>
+                            </div>
+                            <div class="rec-item" data-title="Create Regional Brands" data-icon="🏷️" data-explanation="<p><strong>Create Regional Brands</strong> with quality certification systems.</p><p><strong>Specific actions:</strong></p><ul><li>Establish Krasnodar wine region as 'Russian Napa'</li><li>Certify Siberian honey varieties</li><li>Brand Caucasus cuisine experiences</li><li>Create quality certification similar to EU PDO</li></ul><p><strong>Expected impact:</strong> 30-40% price premiums for certified products</p><div class='modal-tip'><p>💡 Regional branding helped Georgia increase wine exports 5× in 10 years.</p></div>">
+                                <span class="rec-num">2</span>
+                                <div class="rec-content">
+                                    <strong>Create Regional Brands</strong>
+                                    <p>Establish Krasnodar wine region; Siberian honey certification</p>
+                                </div>
+                            </div>
+                            <div class="rec-item" data-title="Invest in Infrastructure" data-icon="🏗️" data-explanation="<p><strong>Invest in Infrastructure</strong> to unlock tourism potential.</p><p><strong>Specific actions:</strong></p><ul><li>Improve regional airports and roads</li><li>Build rural tourism accommodation</li><li>Train hospitality workforce</li><li>Develop digital booking platforms</li></ul><p><strong>Expected impact:</strong> Foundation for 3× tourism growth over 10 years</p><div class='modal-tip'><p>💡 Infrastructure investment typically generates 3-5× ROI in tourism.</p></div>">
+                                <span class="rec-num">3</span>
+                                <div class="rec-content">
+                                    <strong>Invest in Infrastructure</strong>
+                                    <p>Modernize rural tourism facilities; improve accessibility</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 19: CONCLUSIONS -->
+        <section class="slide slide--content slide--dark" data-slide-index="18">
+            <div class="slide-content">
+                <h2 class="slide-title">Key Findings</h2>
+                <div class="conclusions-container">
+                    <div class="conclusion-item" data-title="Economic Structure" data-icon="📊" data-explanation="<p><strong>Finding 1: Economic Structure Determines Role</strong></p><p>The <strong>50× difference</strong> in tourism's GDP contribution (17.5% vs 0.35%) isn't about quality or effort - it reflects fundamentally different economic structures.</p><p><strong>Key insight:</strong></p><ul><li>Small, tourism-dependent economies (Croatia) naturally develop gastronomy as export industry</li><li>Large, diversified economies (Russia) view tourism as one of many sectors</li></ul><p>Both approaches can be successful within their contexts.</p><div class='modal-tip'><p>💡 Trying to copy the other country's model would likely fail - context matters!</p></div>">
+                        <span class="conclusion-num">1</span>
+                        <div class="conclusion-content">
+                            <h4>Economic Structure Determines Role</h4>
+                            <p>A <strong>50× difference</strong> in relative GDP contribution reflects fundamentally different economic structures</p>
+                        </div>
+                    </div>
+                    <div class="conclusion-item" data-title="Value Chain Integration" data-icon="🔗" data-explanation="<p><strong>Finding 2: Value Chain Integration is Critical</strong></p><p>Croatia's tight value chain (60-70% local sourcing) generates multipliers of 2.0-2.5×, while Russia's looser integration produces only 1.2-1.5×.</p><p><strong>What this means:</strong></p><ul><li>Every tourist euro in Croatia creates €2.50 in economic activity</li><li>Same euro in Russia creates only €1.50</li><li>The 'leakage' difference adds up to billions</li></ul><div class='modal-tip'><p>💡 Improving value chain integration is the highest-ROI investment for both countries.</p></div>">
+                        <span class="conclusion-num">2</span>
+                        <div class="conclusion-content">
+                            <h4>Value Chain Integration is Critical</h4>
+                            <p>Croatia's <strong>superior agriculture-tourism integration</strong> generates higher economic multipliers</p>
+                        </div>
+                    </div>
+                    <div class="conclusion-item" data-title="No Superior Model" data-icon="⚖️" data-explanation="<p><strong>Finding 3: Neither Model is Superior</strong></p><p>Both Croatia's 'export model' and Russia's 'domestic model' are valid strategies.</p><p><strong>Croatia's approach works because:</strong></p><ul><li>Small domestic market requires international visitors</li><li>EU membership provides quality framework</li><li>Mediterranean location appeals globally</li></ul><p><strong>Russia's approach works because:</strong></p><ul><li>146 million domestic market is sufficient</li><li>Tourism diversifies without creating dependency</li><li>Regional development supports national goals</li></ul><div class='modal-tip'><p>💡 The 'best' model depends on your country's specific circumstances.</p></div>">
+                        <span class="conclusion-num">3</span>
+                        <div class="conclusion-content">
+                            <h4>Neither Model is Superior</h4>
+                            <p>Both represent <strong>context-appropriate strategies</strong> for their economic situations</p>
+                        </div>
+                    </div>
+                    <div class="conclusion-item" data-title="Multiple Functions" data-icon="🎭" data-explanation="<p><strong>Finding 4: Gastronomy Serves Multiple Functions</strong></p><p>The same 'product' (food tourism) can serve very different strategic purposes:</p><p><strong>As Tourism Driver (Croatia):</strong></p><ul><li>Primary motivation for visitors</li><li>Major foreign exchange earner</li><li>National brand differentiator</li></ul><p><strong>As Regional Development Tool (Russia):</strong></p><ul><li>Develops rural areas</li><li>Preserves cultural heritage</li><li>Creates local employment</li></ul><div class='modal-tip'><p>💡 Understanding your strategic goal is essential before developing gastronomy tourism.</p></div>">
+                        <span class="conclusion-num">4</span>
+                        <div class="conclusion-content">
+                            <h4>Gastronomy Serves Multiple Functions</h4>
+                            <p>Can act as <strong>tourism driver</strong> (Croatia) OR <strong>regional development tool</strong> (Russia)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="final-insight" data-title="Core Takeaway" data-icon="🎯" data-explanation="<p><strong>The Core Takeaway</strong> from this comparative analysis:</p><p>There is no 'one size fits all' approach to gastronomy tourism development. Effective strategy must consider:</p><ul><li><strong>Economic structure:</strong> Tourism-dependent vs diversified</li><li><strong>Market size:</strong> Domestic potential vs international necessity</li><li><strong>Development goals:</strong> Foreign exchange vs regional development</li><li><strong>Competitive advantages:</strong> What makes you unique?</li></ul><p>Both Croatia and Russia have successful strategies - just very different ones!</p><div class='modal-tip'><p>💡 Copy principles, not practices. Adapt to your own context.</p></div>">
+                    <span class="insight-icon">💡</span>
+                    <span class="insight-text">Effective strategy must align with broader economic structure and development goals</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 20: THANK YOU -->
+        <section class="slide slide--title slide--gradient-primary" data-slide-index="19">
+            <div class="slide-content">
+                <h1 class="slide-title">Thank You</h1>
+                <h2 class="slide-subtitle">Questions?</h2>
+                <div class="thank-you-content">
+                    <div class="authors-info">
+                        <h3>Authors</h3>
+                        <p class="author-names">Leon Kreso & Sofia Butkovskaia</p>
+                    </div>
+                    <div class="course-info">
+                        <p><strong>Course:</strong> Economics in Tourism</p>
+                        <p><strong>Institution:</strong> Faculty of Tourism and Hospitality Management, Opatija</p>
+                        <p><strong>Date:</strong> November 2025</p>
+                    </div>
+                    <div class="closing-flags">
+                        <span class="flag">🇭🇷</span>
+                        <span class="separator">×</span>
+                        <span class="flag">🇷🇺</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Progress Bar -->
+    <div id="progress-bar" class="progress-bar">
+        <div id="progress-fill" class="progress-fill"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="presentation-footer">
+        <div class="footer-left">
+            <span>Leon Kreso & Sofia Butkovskaia</span>
+        </div>
+        <div class="footer-center">
+            <span>Faculty of Tourism and Hospitality Management, Opatija</span>
+        </div>
+        <div class="footer-right">
+            <span>November 2025</span>
+        </div>
+    </footer>
+
+    <!-- Explanation Modal -->
+    <div id="explanation-modal" class="explanation-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><span class="modal-icon" id="modal-icon">📊</span><span id="modal-title">Explanation</span></h3>
+                <button class="modal-close" id="modal-close" aria-label="Close modal">×</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <p>Loading explanation...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simple Navigation Script -->
+    <script src="app.js"></script>
+</body>
+</html>
